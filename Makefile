@@ -126,6 +126,10 @@ pprof-check:
 access-db:
 	mysql -h $(MYSQL_HOST) -P $(MYSQL_PORT) -u $(MYSQL_USER) -p$(MYSQL_PASS) $(MYSQL_DBNAME)
 
+.PHONY: access-db
+access-local-db:
+	mysql -h 127.0.0.1 -P $(MYSQL_PORT) -u $(MYSQL_USER) -p$(MYSQL_PASS) $(MYSQL_DBNAME)
+
 # Components
 .PHONY: makedir
 makedir:
