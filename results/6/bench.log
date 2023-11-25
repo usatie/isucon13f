@@ -1,0 +1,32 @@
+2023-11-25T03:26:15.483Z	info	isupipe-benchmarker	SSL接続が有効になっています
+2023-11-25T03:26:15.483Z	info	isupipe-benchmarker	静的ファイルチェックを行います
+2023-11-25T03:26:15.483Z	info	isupipe-benchmarker	静的ファイルチェックが完了しました
+2023-11-25T03:26:15.483Z	info	isupipe-benchmarker	webappの初期化を行います
+2023-11-25T03:26:18.114Z	info	isupipe-benchmarker	ベンチマーク走行前のデータ整合性チェックを行います
+2023-11-25T03:26:35.507Z	info	isupipe-benchmarker	整合性チェックが成功しました
+2023-11-25T03:26:35.507Z	info	isupipe-benchmarker	ベンチマーク走行を開始します
+2023-11-25T03:26:37.515Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 3}
+2023-11-25T03:27:35.508Z	info	isupipe-benchmarker	ベンチマーク走行を停止します
+2023-11-25T03:27:36.042Z	info	isupipe-benchmarker	ベンチマーク走行終了
+2023-11-25T03:27:36.042Z	info	isupipe-benchmarker	最終チェックを実施します
+2023-11-25T03:27:36.042Z	info	isupipe-benchmarker	最終チェックが成功しました
+2023-11-25T03:27:36.042Z	info	isupipe-benchmarker	重複排除したログを以下に出力します
+2023-11-25T03:27:36.042Z	info	isupipe-benchmarker	配信を最後まで視聴できた視聴者数	{"viewers": 44}
+
+[一般エラー] POST /api/icon へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)
+[一般エラー] POST /api/livestream/7522/livecomment/1012/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7522/livecomment/1013/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7538/livecomment/1143/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] GET /api/livestream/7522/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:200, actual:500)
+[一般エラー] POST /api/livestream/7543/livecomment/1191/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[リクエストタイムアウト] GET /api/user/yuitakahashi0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/yuitakahashi0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/atanaka0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/atanaka0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/satomigoto0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/satomigoto0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/reisakamoto0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/reisakamoto0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/mtanaka1/statistics: Get "https://pipe.u.isucon.dev:443/api/user/mtanaka1/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/rikanakagawa0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/rikanakagawa0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/xabe0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/xabe0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/gototsubasa0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/gototsubasa0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] POST /api/register: Post "https://pipe.u.isucon.dev:443/api/register": read udp 10.0.38.56:39736->18.181.68.109:53: i/o timeout: タイムアウトによりリクエスト失敗
+名前解決成功数 5316
+売上: 9933

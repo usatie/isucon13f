@@ -44,3 +44,6 @@ ALTER TABLE themes ADD INDEX user_id_idx(user_id);
 
 DROP INDEX `start_end_idx` ON reservation_slots;
 ALTER TABLE reservation_slots ADD INDEX start_end_idx(start_at, end_at);
+
+DROP INDEX `user_livestream_id_idx` ON ng_words;
+ALTER TABLE ng_words ADD INDEX user_livestream_id_idx(user_id, livestream_id);
