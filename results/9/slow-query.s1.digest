@@ -1,0 +1,140 @@
+
+# 270ms user time, 40ms system time, 36.75M rss, 50.39M vsz
+# Current date: Sat Nov 25 06:50:06 2023
+# Hostname: ip-192-168-0-11
+# Files: /var/log/mysql/mysql-slow.log
+# Overall: 2.16k total, 12 unique, 37.26 QPS, 0.00x concurrency __________
+# Time range: 2023-11-25T06:46:46 to 2023-11-25T06:47:44
+# Attribute          total     min     max     avg     95%  stddev  median
+# ============     ======= ======= ======= ======= ======= ======= =======
+# Exec time          107ms     2us    10ms    49us    63us   312us    49us
+# Lock time          746us       0    18us       0     1us       0       0
+# Rows sent              3       0       1    0.00       0    0.04       0
+# Rows examine       1.26k       0   1.25k    0.60       0   26.47       0
+# Query size       221.18k       5     286  104.81  158.58   58.32  143.84
+
+# Profile
+# Rank Query ID                       Response time Calls R/Call V/M   Ite
+# ==== ============================== ============= ===== ====== ===== ===
+#    1 0x77FB9E134D073862D1E78FEEC...  0.0717 67.3%  1280 0.0001  0.00 INSERT records
+#    2 0xDA556F9115773A1A99AA01656...  0.0110 10.3%     5 0.0022  0.01 ADMIN PREPARE
+#    3 0xDFEFE5BA5D8654534DC8550C6...  0.0104  9.7%     1 0.0104  0.00 DELETE records
+#    4 0x8F7679D452333ED3C7D60D221...  0.0103  9.7%   853 0.0000  0.00 ADMIN RESET STMT
+# MISC 0xMISC                          0.0032  3.0%    22 0.0001   0.0 <8 ITEMS>
+
+# Query 1: 1.28k QPS, 0.07x concurrency, ID 0x77FB9E134D073862D1E78FEEC3436291 at byte 10050
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: 2023-11-25T06:47:43 to 2023-11-25T06:47:44
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         59    1280
+# Exec time     67    72ms    48us     1ms    55us    73us    38us    49us
+# Lock time     96   723us       0     1us       0     1us       0     1us
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    86 192.27k     143     198  153.82  158.58    4.58  151.03
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us  #
+#   1ms  #
+#  10ms
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+insert into records (content,ttl,prio,type,domain_id,disabled,name,ordername,auth) values ('18.181.68.109',120,0,'A',2,0,'test001.u.isucon.dev',NULL,1)\G
+
+# Query 2: 0.09 QPS, 0.00x concurrency, ID 0xDA556F9115773A1A99AA0165670CE848 at byte 2392
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.01
+# Time range: 2023-11-25T06:46:46 to 2023-11-25T06:47:43
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count          0       5
+# Exec time     10    11ms    52us    10ms     2ms    10ms     4ms   236us
+# Lock time      2    18us       0    18us     3us    17us     7us       0
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size     0     150      30      30      30      30       0      30
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us  ################################################################
+#   1ms
+#  10ms  ################################
+# 100ms
+#    1s
+#  10s+
+administrator command: Prepare\G
+
+# Query 3: 0 QPS, 0x concurrency, ID 0xDFEFE5BA5D8654534DC8550C6E3DC9C0 at byte 6359
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: all events occurred at 2023-11-25T06:47:43
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count          0       1
+# Exec time      9    10ms    10ms    10ms    10ms    10ms       0    10ms
+# Lock time      0     1us     1us     1us     1us     1us       0     1us
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine  99   1.25k   1.25k   1.25k   1.25k   1.25k       0   1.25k
+# Query size     0      37      37      37      37      37       0      37
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us
+# 100us
+#   1ms
+#  10ms  ################################################################
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+delete from records where domain_id=2\G
+# Converted for EXPLAIN
+# EXPLAIN /*!50100 PARTITIONS*/
+select * from  records where domain_id=2\G
+
+# Query 4: 14.71 QPS, 0.00x concurrency, ID 0x8F7679D452333ED3C7D60D22131CEFD4 at byte 354240
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: 2023-11-25T06:46:46 to 2023-11-25T06:47:44
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         39     853
+# Exec time      9    10ms    10us    63us    12us    12us     4us    10us
+# Lock time      0       0       0       0       0       0       0       0
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    12  27.49k      33      33      33      33       0      33
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us
+#   1ms
+#  10ms
+# 100ms
+#    1s
+#  10s+
+administrator command: Reset stmt\G

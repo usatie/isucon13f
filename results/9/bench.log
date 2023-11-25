@@ -1,0 +1,36 @@
+2023-11-25T06:47:41.627Z	info	isupipe-benchmarker	SSL接続が有効になっています
+2023-11-25T06:47:41.627Z	info	isupipe-benchmarker	静的ファイルチェックを行います
+2023-11-25T06:47:41.627Z	info	isupipe-benchmarker	静的ファイルチェックが完了しました
+2023-11-25T06:47:41.627Z	info	isupipe-benchmarker	webappの初期化を行います
+2023-11-25T06:47:44.146Z	info	isupipe-benchmarker	ベンチマーク走行前のデータ整合性チェックを行います
+2023-11-25T06:48:11.436Z	info	isupipe-benchmarker	整合性チェックが成功しました
+2023-11-25T06:48:11.436Z	info	isupipe-benchmarker	ベンチマーク走行を開始します
+2023-11-25T06:48:13.442Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 3}
+2023-11-25T06:48:15.442Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 4}
+2023-11-25T06:48:17.441Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 6}
+2023-11-25T06:48:19.441Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 9}
+2023-11-25T06:48:21.441Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 13}
+2023-11-25T06:49:11.437Z	info	isupipe-benchmarker	ベンチマーク走行を停止します
+2023-11-25T06:49:11.635Z	info	isupipe-benchmarker	ベンチマーク走行終了
+2023-11-25T06:49:11.635Z	info	isupipe-benchmarker	最終チェックを実施します
+2023-11-25T06:49:11.636Z	info	isupipe-benchmarker	最終チェックが成功しました
+2023-11-25T06:49:11.636Z	info	isupipe-benchmarker	重複排除したログを以下に出力します
+2023-11-25T06:49:11.636Z	info	isupipe-benchmarker	配信を最後まで視聴できた視聴者数	{"viewers": 81}
+
+[一般エラー] POST /api/icon へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)
+[一般エラー] POST /api/livestream/7523/livecomment/1013/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7523/livecomment/1015/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7529/livecomment/1046/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7529/livecomment/1058/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[リクエストタイムアウト] GET /api/user/yuitakahashi0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/yuitakahashi0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/kazuya580/statistics: Get "https://pipe.u.isucon.dev:443/api/user/kazuya580/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/nakamuraryohei0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/nakamuraryohei0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/nanamimatsumoto0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/nanamimatsumoto0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/kanasasaki0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/kanasasaki0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/xabe0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/xabe0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/atsushi410/statistics: Get "https://pipe.u.isucon.dev:443/api/user/atsushi410/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/user/bhasegawa0/statistics: Get "https://pipe.u.isucon.dev:443/api/user/bhasegawa0/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/livestream/7589/statistics: Get "https://atanaka0.u.isucon.dev:443/api/livestream/7589/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/livestream/7593/statistics: Get "https://kaorisato0.u.isucon.dev:443/api/livestream/7593/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+名前解決成功数 27236
+売上: 16979
