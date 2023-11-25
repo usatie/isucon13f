@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"time"
@@ -248,8 +249,9 @@ func addRecord(hostname, recordName, recordType, content string, ttl int) error 
 	defer resp.Body.Close()
 
 	// レスポンスを検証
-	if resp.StatusCode != http.StatusOK {
-		return fmt.Errorf("PowerDNS API error: %s", resp.Status)
+	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusNoContent {
+		bodyBytes, _ := ioutil.ReadAll(resp.Body)
+		return fmt.Errorf("PowerDNS API error: %s, Details: %s", resp.Status, string(bodyBytes))
 	}
 
 	return nil
@@ -312,7 +314,7 @@ func registerHandler(c echo.Context) error {
 			return echo.NewHTTPError(http.StatusInternalServerError, string(out)+": "+err.Error())
 		}
 	*/
-	if err := addRecord("u.isucon.dev", req.Name+".u.isucon.dev", "A", powerDNSSubdomainAddress, 120); err != nil {
+	if err := addRecord("u.isucon.dev.", req.Name+".u.isucon.dev.", "A", powerDNSSubdomainAddress, 120); err != nil {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to add record: "+err.Error())
 	}
 
