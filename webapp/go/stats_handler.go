@@ -87,42 +87,6 @@ func getUserStatisticsHandler(c echo.Context) error {
 	}
 
 	// ランク算出
-	/*
-		var users []*UserModel
-		if err := tx.SelectContext(ctx, &users, "SELECT * FROM users"); err != nil {
-			return echo.NewHTTPError(http.StatusInternalServerError, "failed to get users: "+err.Error())
-		}
-
-		var ranking UserRanking
-		for _, user := range users {
-			var reactions int64
-			query := `
-			SELECT COUNT(*) FROM users u
-			INNER JOIN livestreams l ON l.user_id = u.id
-			INNER JOIN reactions r ON r.livestream_id = l.id
-			WHERE u.id = ?`
-			if err := tx.GetContext(ctx, &reactions, query, user.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
-				return echo.NewHTTPError(http.StatusInternalServerError, "failed to count reactions: "+err.Error())
-			}
-
-			var tips int64
-			query = `
-			SELECT IFNULL(SUM(l2.tip), 0) FROM users u
-			INNER JOIN livestreams l ON l.user_id = u.id
-			INNER JOIN livecomments l2 ON l2.livestream_id = l.id
-			WHERE u.id = ?`
-			if err := tx.GetContext(ctx, &tips, query, user.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
-				return echo.NewHTTPError(http.StatusInternalServerError, "failed to count tips: "+err.Error())
-			}
-
-			score := reactions + tips
-			ranking = append(ranking, UserRankingEntry{
-				Username: user.Name,
-				Score:    score,
-			})
-		}
-		sort.Sort(ranking)
-	*/
 	// in one query, sort by SQL
 	var ranking UserRanking
 	query := `
@@ -153,14 +117,14 @@ func getUserStatisticsHandler(c echo.Context) error {
 	GROUP BY
 	  u.name
 	ORDER BY
-	  score DESC;
+	  score ASC;
 	`
 	if err := tx.SelectContext(ctx, &ranking, query); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get ranking: "+err.Error())
 	}
 
 	var rank int64 = 1
-	for i := 0; i < len(ranking); i++ {
+	for i := len(ranking) - 1; i >= 0; i-- {
 		entry := ranking[i]
 		if entry.Username == username {
 			break
@@ -182,25 +146,6 @@ func getUserStatisticsHandler(c echo.Context) error {
 	// ライブコメント数、チップ合計
 	var totalLivecomments int64
 	var totalTip int64
-	/*
-		var livestreams []*LivestreamModel
-		if err := tx.SelectContext(ctx, &livestreams, "SELECT * FROM livestreams WHERE user_id = ?", user.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
-			return echo.NewHTTPError(http.StatusInternalServerError, "failed to get livestreams: "+err.Error())
-		}
-
-		for _, livestream := range livestreams {
-			var livecomments []*LivecommentModel
-			if err := tx.SelectContext(ctx, &livecomments, "SELECT * FROM livecomments WHERE livestream_id = ?", livestream.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
-				return echo.NewHTTPError(http.StatusInternalServerError, "failed to get livecomments: "+err.Error())
-			}
-
-			for _, livecomment := range livecomments {
-				totalTip += livecomment.Tip
-				totalLivecomments++
-			}
-		}
-	*/
-
 	// in one query
 	if err := tx.GetContext(ctx, &totalLivecomments, `SELECT COUNT(*) FROM livestreams l INNER JOIN livecomments c ON c.livestream_id = l.id WHERE l.user_id = ?`, user.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to count livecomments: "+err.Error())
@@ -211,21 +156,10 @@ func getUserStatisticsHandler(c echo.Context) error {
 
 	// 合計視聴者数
 	var viewersCount int64
-	/*
-		for _, livestream := range livestreams {
-			var cnt int64
-			if err := tx.GetContext(ctx, &cnt, "SELECT COUNT(*) FROM livestream_viewers_history WHERE livestream_id = ?", livestream.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
-				return echo.NewHTTPError(http.StatusInternalServerError, "failed to get livestream_view_history: "+err.Error())
-			}
-			viewersCount += cnt
-		}
-	*/
 	// in one query
 	if err := tx.GetContext(ctx, &viewersCount, `SELECT COUNT(*) FROM livestreams l INNER JOIN livestream_viewers_history h ON h.livestream_id = l.id WHERE l.user_id = ?`, user.ID); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to count livestream viewers: "+err.Error())
 	}
-	/*
-	 */
 
 	// お気に入り絵文字
 	var favoriteEmoji string
