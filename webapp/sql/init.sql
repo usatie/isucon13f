@@ -84,7 +84,7 @@ BEGIN
         DEALLOCATE PREPARE stmt;
     END IF;
 
-    SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' ADD FULLTEXT INDEX ', p_index_name, '(', p_index_columns, ')');
+    SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' ADD FULLTEXT INDEX ', p_index_name, '(', p_index_columns, ') WITH PARSER ngram');
     PREPARE stmt FROM @s;
     EXECUTE stmt;
     DEALLOCATE PREPARE stmt;
