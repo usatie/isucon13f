@@ -5,12 +5,12 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net"
 	"net/http"
 	"os"
 	"os/exec"
-	"runtime"
 	"strconv"
 
 	_ "net/http/pprof"
@@ -18,11 +18,9 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
 
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo-contrib/session"
-	echolog "github.com/labstack/gommon/log"
 )
 
 const (
@@ -126,21 +124,21 @@ func initializeHandler(c echo.Context) error {
 
 func main() {
 	// 最後に簡単にログを切れるようにコメントを追加しておく
-	// log.SetFlags(0)
-	// log.SetOutput(ioutil.Discard)
+	log.SetFlags(0)
+	log.SetOutput(ioutil.Discard)
 
 	// pprof
-	runtime.SetBlockProfileRate(1)
-	go func() {
-		log.Fatal(http.ListenAndServe(":6060", nil))
-	}()
+	//runtime.SetBlockProfileRate(1)
+	//go func() {
+	//	log.Fatal(http.ListenAndServe(":6060", nil))
+	//}()
 
 	// Echo
 	e := echo.New()
 	// This must be remove in production
-	e.Debug = true
-	e.Logger.SetLevel(echolog.DEBUG)
-	e.Use(middleware.Logger())
+	e.Debug = false
+	e.Logger.SetOutput(ioutil.Discard)
+	//e.Use(middleware.Logger())
 
 	// Other
 	cookieStore := sessions.NewCookieStore(secret)
