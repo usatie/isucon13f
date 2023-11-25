@@ -1,0 +1,140 @@
+
+# 300ms user time, 10ms system time, 36.88M rss, 50.45M vsz
+# Current date: Sat Nov 25 08:13:55 2023
+# Hostname: ip-192-168-0-11
+# Files: /var/log/mysql/mysql-slow.log
+# Overall: 2.23k total, 12 unique, 318.29 QPS, 0.02x concurrency _________
+# Time range: 2023-11-25T08:11:19 to 2023-11-25T08:11:26
+# Attribute          total     min     max     avg     95%  stddev  median
+# ============     ======= ======= ======= ======= ======= ======= =======
+# Exec time          114ms     1us    12ms    51us    80us   346us    49us
+# Lock time          826us       0    20us       0     1us       0       0
+# Rows sent              3       0       1    0.00       0    0.04       0
+# Rows examine       1.26k       0   1.25k    0.58       0   26.07       0
+# Query size       223.35k       5     286  102.65  158.58   58.67  143.84
+
+# Profile
+# Rank Query ID                       Response time Calls R/Call V/M   Ite
+# ==== ============================== ============= ===== ====== ===== ===
+#    1 0x77FB9E134D073862D1E78FEEC...  0.0744 65.2%  1280 0.0001  0.00 INSERT records
+#    2 0x8F7679D452333ED3C7D60D221...  0.0128 11.3%   921 0.0000  0.00 ADMIN RESET STMT
+#    3 0xDA556F9115773A1A99AA01656...  0.0124 10.8%     5 0.0025  0.01 ADMIN PREPARE
+#    4 0xDFEFE5BA5D8654534DC8550C6...  0.0112  9.8%     1 0.0112  0.00 DELETE records
+# MISC 0xMISC                          0.0033  2.9%    21 0.0002   0.0 <8 ITEMS>
+
+# Query 1: 0 QPS, 0x concurrency, ID 0x77FB9E134D073862D1E78FEEC3436291 at byte 9813
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: all events occurred at 2023-11-25T08:11:26
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         57    1280
+# Exec time     65    74ms    48us     1ms    58us    84us    33us    49us
+# Lock time     97   805us       0    20us       0     1us       0     1us
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    86 192.27k     143     198  153.82  158.58    4.58  151.03
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us  #
+#   1ms  #
+#  10ms
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+insert into records (content,ttl,prio,type,domain_id,disabled,name,ordername,auth) values ('18.181.68.109',120,0,'A',2,0,'test001.u.isucon.dev',NULL,1)\G
+
+# Query 2: 131.57 QPS, 0.00x concurrency, ID 0x8F7679D452333ED3C7D60D22131CEFD4 at byte 44397
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: 2023-11-25T08:11:19 to 2023-11-25T08:11:26
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         41     921
+# Exec time     11    13ms    11us    53us    13us    40us     8us    10us
+# Lock time      0       0       0       0       0       0       0       0
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    13  29.68k      33      33      33      33       0      33
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us
+#   1ms
+#  10ms
+# 100ms
+#    1s
+#  10s+
+administrator command: Reset stmt\G
+
+# Query 3: 0.71 QPS, 0.00x concurrency, ID 0xDA556F9115773A1A99AA0165670CE848 at byte 2392
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.01
+# Time range: 2023-11-25T08:11:19 to 2023-11-25T08:11:26
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count          0       5
+# Exec time     10    12ms    53us    12ms     2ms    12ms     5ms   224us
+# Lock time      1    14us       0    14us     2us    13us     5us       0
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size     0     150      30      30      30      30       0      30
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ################################################################
+# 100us  ################################################################
+#   1ms
+#  10ms  ################################
+# 100ms
+#    1s
+#  10s+
+administrator command: Prepare\G
+
+# Query 4: 0 QPS, 0x concurrency, ID 0xDFEFE5BA5D8654534DC8550C6E3DC9C0 at byte 6359
+# This item is included in the report because it matches --limit.
+# Scores: V/M = 0.00
+# Time range: all events occurred at 2023-11-25T08:11:26
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count          0       1
+# Exec time      9    11ms    11ms    11ms    11ms    11ms       0    11ms
+# Lock time      0     1us     1us     1us     1us     1us       0     1us
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine  99   1.25k   1.25k   1.25k   1.25k   1.25k       0   1.25k
+# Query size     0      37      37      37      37      37       0      37
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us
+# 100us
+#   1ms
+#  10ms  ################################################################
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+delete from records where domain_id=2\G
+# Converted for EXPLAIN
+# EXPLAIN /*!50100 PARTITIONS*/
+select * from  records where domain_id=2\G
