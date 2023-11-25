@@ -397,17 +397,17 @@ func moderateHandler(c echo.Context) error {
 
 			for _, livecomment := range livecomments {
 				query := `
-				DELETE FROM livecomments
-				WHERE
-				id = ? AND
-				livestream_id = ? AND
-				(SELECT COUNT(*)
-				FROM
-				(SELECT ? AS text) AS texts
-				INNER JOIN
-				(SELECT CONCAT('%', ?, '%')	AS pattern) AS patterns
-				ON texts.text LIKE patterns.pattern) >= 1;
-				`
+					DELETE FROM livecomments
+					WHERE
+					id = ? AND
+					livestream_id = ? AND
+					(SELECT COUNT(*)
+					FROM
+					(SELECT ? AS text) AS texts
+					INNER JOIN
+					(SELECT CONCAT('%', ?, '%')	AS pattern) AS patterns
+					ON texts.text LIKE patterns.pattern) >= 1;
+					`
 				if _, err := tx.ExecContext(ctx, query, livecomment.ID, livestreamID, livecomment.Comment, ngword.Word); err != nil {
 					return echo.NewHTTPError(http.StatusInternalServerError, "failed to delete old livecomments that hit spams: "+err.Error())
 				}
@@ -418,11 +418,11 @@ func moderateHandler(c echo.Context) error {
 	// Use MATCH(text) AGAINST('+NGワード1 +NGワード2' IN BOOLEAN MODE);
 	for _, ngword := range ngwords {
 		query := `
-	DELETE FROM livecomments
-	WHERE
-	livestream_id = ? AND
-	MATCH(comment) AGAINST(? IN BOOLEAN MODE);
-	`
+			DELETE FROM livecomments
+			WHERE
+			livestream_id = ? AND
+			MATCH(comment) AGAINST(? IN BOOLEAN MODE);
+			`
 		if _, err := tx.ExecContext(ctx, query, livestreamID, ngword.Word); err != nil {
 			return echo.NewHTTPError(http.StatusInternalServerError, "failed to delete old livecomments that hit spams: "+err.Error())
 		}
