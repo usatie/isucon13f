@@ -1,0 +1,31 @@
+2023-11-25T07:28:16.281Z	info	isupipe-benchmarker	SSL接続が有効になっています
+2023-11-25T07:28:16.281Z	info	isupipe-benchmarker	静的ファイルチェックを行います
+2023-11-25T07:28:16.281Z	info	isupipe-benchmarker	静的ファイルチェックが完了しました
+2023-11-25T07:28:16.281Z	info	isupipe-benchmarker	webappの初期化を行います
+2023-11-25T07:28:18.765Z	info	isupipe-benchmarker	ベンチマーク走行前のデータ整合性チェックを行います
+2023-11-25T07:28:36.657Z	info	isupipe-benchmarker	整合性チェックが成功しました
+2023-11-25T07:28:36.657Z	info	isupipe-benchmarker	ベンチマーク走行を開始します
+2023-11-25T07:28:38.664Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 3}
+2023-11-25T07:28:40.664Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 4}
+2023-11-25T07:28:42.665Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 6}
+2023-11-25T07:28:44.664Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 9}
+2023-11-25T07:28:46.664Z	info	isupipe-benchmarker	DNS水責め負荷が上昇します	{"parallelis": 13}
+2023-11-25T07:29:36.658Z	info	isupipe-benchmarker	ベンチマーク走行を停止します
+2023-11-25T07:29:36.658Z	warn	isupipe-benchmarker	ライブコメントを配信に投稿できないため、視聴者が離脱します	{"viewer": "matsumotoasuka0", "livestream_id": 7638, "error": "Post \"https://hanako600.u.isucon.dev:443/api/livestream/7638/livecomment\": context canceled: ベンチマーク走行が継続できないエラーが発生しました"}
+2023-11-25T07:29:37.255Z	info	isupipe-benchmarker	ベンチマーク走行終了
+2023-11-25T07:29:37.255Z	info	isupipe-benchmarker	最終チェックを実施します
+2023-11-25T07:29:37.256Z	info	isupipe-benchmarker	最終チェックが成功しました
+2023-11-25T07:29:37.256Z	info	isupipe-benchmarker	重複排除したログを以下に出力します
+2023-11-25T07:29:37.256Z	info	isupipe-benchmarker	配信を最後まで視聴できた視聴者数	{"viewers": 129}
+
+[リクエストタイムアウト] GET /api/livestream/7577/statistics: Get "https://isato0.u.isucon.dev:443/api/livestream/7577/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/livestream/7525/statistics: Get "https://kazuya580.u.isucon.dev:443/api/livestream/7525/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] GET /api/livestream/7557/statistics: Get "https://kanasasaki0.u.isucon.dev:443/api/livestream/7557/statistics": context deadline exceeded (Client.Timeout exceeded while awaiting headers): タイムアウトによりリクエスト失敗
+[リクエストタイムアウト] POST /api/livestream/reservation: Post "https://naokokondo1.u.isucon.dev:443/api/livestream/reservation": read udp 10.0.35.40:60279->52.192.122.218:53: i/o timeout: タイムアウトによりリクエスト失敗
+[一般エラー] POST /api/icon へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)
+[一般エラー] POST /api/livestream/7525/livecomment/1022/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7527/livecomment/1028/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7523/livecomment/1178/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+[一般エラー] POST /api/livestream/7528/livecomment/1191/report へのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:404)
+名前解決成功数 27743
+売上: 26699
