@@ -48,7 +48,7 @@ ALP_CONFIG:=$(ALP_CONFIG_DIR)/config.yml
 TRDSQL_DIR:=$(HOME)/tool-config/trdsql
 TRDSQL_SQL:=$(TRDSQL_DIR)/access.sql
 
-DURATION=75
+DURATION=120
 RESULT_DIR:=$(HOME)/results
 
 # Main commands
