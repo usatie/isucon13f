@@ -28,8 +28,8 @@ user		= mysql
 #
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
-bind-address		= 127.0.0.1
-mysqlx-bind-address	= 127.0.0.1
+bind-address		= 0.0.0.0
+mysqlx-bind-address	= 0.0.0.0
 #
 # * Fine Tuning
 #
@@ -43,7 +43,7 @@ key_buffer_size		= 16M
 # the first time they are touched
 myisam-recover-options  = BACKUP
 
-# max_connections        = 151
+max_connections        = 10000
 
 # table_open_cache       = 4000
 
@@ -62,10 +62,10 @@ myisam-recover-options  = BACKUP
 log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
-# slow_query_log		= 1
-# slow_query_log_file	= /var/log/mysql/mysql-slow.log
-# long_query_time = 2
-# log-queries-not-using-indexes
+slow_query_log		= 1
+slow_query_log_file	= /var/log/mysql/mysql-slow.log
+long_query_time = 0
+log-queries-not-using-indexes
 #
 # The following can be used as easy to replay backup logs or for replication.
 # note: if you are setting up a replication slave, see README.Debian about
@@ -76,3 +76,17 @@ log_error = /var/log/mysql/error.log
 max_binlog_size   = 100M
 # binlog_do_db		= include_database_name
 # binlog_ignore_db	= include_database_name
+#
+
+# Custom
+open_files_limit = 65536
+# 読み込んだデータ及びインデックスをメモリ上に確保する機能（DB専用サーバーならば物理メモリの80%程度にしておく）
+# この例は3GB（4GBメモリを想定）
+innodb_buffer_pool_size = 3G
+# innodb_buffer_poolを活用する場合は、ディスクキャッシュと二重でメモリを確保しないようにO_DIRECTを設定する
+innodb_flush_method=O_DIRECT
+
+# 更新ログをdisk cacheをストレージに同期させるのを非同期に変更する
+innodb_flush_log_at_trx_commit = 2
+# 更新ログをそもそもオフにする（レプリケーションしないならこれでいい）
+disable-log-bin = 1
