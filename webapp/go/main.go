@@ -10,7 +10,10 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"runtime"
 	"strconv"
+
+	_ "net/http/pprof"
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
@@ -65,6 +68,8 @@ func connectDB(logger echo.Logger) (*sqlx.DB, error) {
 	conf.Passwd = "isucon"
 	conf.DBName = "isupipe"
 	conf.ParseTime = true
+	// Everytime
+	conf.InterpolateParams = true
 
 	if v, ok := os.LookupEnv(networkTypeEnvKey); ok {
 		conf.Net = v
@@ -97,7 +102,8 @@ func connectDB(logger echo.Logger) (*sqlx.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	db.SetMaxOpenConns(10)
+	db.SetMaxOpenConns(1000)
+	db.SetMaxIdleConns(1000)
 
 	if err := db.Ping(); err != nil {
 		return nil, err
@@ -119,10 +125,24 @@ func initializeHandler(c echo.Context) error {
 }
 
 func main() {
+	// 最後に簡単にログを切れるようにコメントを追加しておく
+	// log.SetFlags(0)
+	// log.SetOutput(ioutil.Discard)
+
+	// pprof
+	runtime.SetBlockProfileRate(1)
+	go func() {
+		log.Fatal(http.ListenAndServe(":6060", nil))
+	}()
+
+	// Echo
 	e := echo.New()
+	// This must be remove in production
 	e.Debug = true
 	e.Logger.SetLevel(echolog.DEBUG)
 	e.Use(middleware.Logger())
+
+	// Other
 	cookieStore := sessions.NewCookieStore(secret)
 	cookieStore.Options.Domain = "*.u.isucon.dev"
 	e.Use(session.Middleware(cookieStore))
