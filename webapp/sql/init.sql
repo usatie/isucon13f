@@ -24,26 +24,45 @@ ALTER TABLE `livecomments` auto_increment = 1;
 ALTER TABLE `livestreams` auto_increment = 1;
 ALTER TABLE `users` auto_increment = 1;
 
-DROP INDEX `livestream_id_idx` ON `livestream_tags`;
-ALTER TABLE livestream_tags ADD INDEX livestream_id_idx(livestream_id);
+DELIMITER //
 
-DROP INDEX `user_id_idx` ON `icons`;
-ALTER TABLE icons ADD INDEX user_id_idx(user_id);
+DROP PROCEDURE IF EXISTS RecreateIndexIfNeeded;
+CREATE PROCEDURE RecreateIndexIfNeeded(
+    IN p_database_name VARCHAR(255),
+    IN p_table_name VARCHAR(255),
+    IN p_index_name VARCHAR(255),
+    IN p_index_columns VARCHAR(255)
+)
+BEGIN
+    DECLARE indexExists INT;
 
-DROP INDEX `name_idx` ON `isudns`.records;
-ALTER TABLE `isudns`.records ADD INDEX name_idx(name);
+    SELECT COUNT(*)
+    INTO indexExists
+    FROM INFORMATION_SCHEMA.STATISTICS
+    WHERE table_schema = p_database_name
+      AND table_name = p_table_name
+      AND index_name = p_index_name;
 
-DROP INDEX `livestream_id_idx` ON reactions;
-ALTER TABLE reactions ADD INDEX livestream_id_idx(livestream_id);
+    IF indexExists > 0 THEN
+        SET @s = CONCAT('DROP INDEX ', p_index_name, ' ON ', p_database_name, '.', p_table_name);
+        PREPARE stmt FROM @s;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+    END IF;
 
-DROP INDEX `livestream_id_idx` ON livecomments;
-ALTER TABLE livecomments ADD INDEX livestream_id_idx(livestream_id);
+    SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' ADD INDEX ', p_index_name, '(', p_index_columns, ')');
+    PREPARE stmt FROM @s;
+    EXECUTE stmt;
+    DEALLOCATE PREPARE stmt;
+END //
 
-DROP INDEX `user_id_idx` ON themes;
-ALTER TABLE themes ADD INDEX user_id_idx(user_id);
+DELIMITER ;
 
-DROP INDEX `start_end_idx` ON reservation_slots;
-ALTER TABLE reservation_slots ADD INDEX start_end_idx(start_at, end_at);
-
-DROP INDEX `user_livestream_id_idx` ON ng_words;
-ALTER TABLE ng_words ADD INDEX user_livestream_id_idx(user_id, livestream_id);
+CALL RecreateIndexIfNeeded('isupipe', 'livestream_tags', 'livestream_id_idx', 'livestream_id');
+CALL RecreateIndexIfNeeded('isupipe', 'icons', 'user_id_idx', 'user_id');
+CALL RecreateIndexIfNeeded('isudns', 'records', 'name_idx', 'name');
+CALL RecreateIndexIfNeeded('isupipe', 'reactions', 'livestream_id_idx', 'livestream_id');
+CALL RecreateIndexIfNeeded('isupipe', 'livecomments', 'livestream_id_idx', 'livestream_id');
+CALL RecreateIndexIfNeeded('isupipe', 'themes', 'user_id_idx', 'user_id');
+CALL RecreateIndexIfNeeded('isupipe', 'reservation_slots', 'start_end_idx', 'start_at, end_at');
+CALL RecreateIndexIfNeeded('isupipe', 'ng_words', 'user_livestream_id_idx', 'user_id, livestream_id');
