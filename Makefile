@@ -29,10 +29,12 @@ GITHUB_REPO_URL:=git@github.com:$(GITHUB_REPO).git
 DB_PATH:=/etc/mysql
 NGINX_PATH:=/etc/nginx
 SYSTEMD_PATH:=/etc/systemd
+PDNS_PATH:=/etc/powerdns
 ENVSH_PATH:=$(HOME)/$(ENV_NAME)
 DB_DIR_PATH:=/etc
 NGINX_DIR_PATH:=/etc
 SYSTEMD_DIR_PATH:=/etc
+PDNS_DIR_PATH:=/etc
 ENVSH_DIR_PATH:=$(HOME)
 
 GITIGNORE_PATH:=$(HOME)/.gitignore
@@ -58,10 +60,10 @@ RESULT_DIR:=$(HOME)/results
 setup: addkey vim-setup git-setup install-tools makedir keygen
 
 .PHONY: get-conf
-get-conf: check-server-id get-db-conf get-nginx-conf get-service-file get-envsh
+get-conf: check-server-id get-db-conf get-nginx-conf get-service-file get-pdns-conf get-envsh
 
 .PHONY: deploy-conf
-deploy-conf: check-server-id deploy-db-conf deploy-nginx-conf deploy-service-file deploy-envsh
+deploy-conf: check-server-id deploy-db-conf deploy-nginx-conf deploy-service-file deploy-pdns-conf deploy-envsh
 
 PHONY: bench-result-dir
 bench-result-dir: $(RESULT_DIR)
@@ -313,6 +315,12 @@ get-service-file:
 	sudo rsync -qauh $(SYSTEMD_PATH) ~/$(SERVER_ID)$(SYSTEMD_DIR_PATH)
 	sudo chown $(USER) -R ~/$(SERVER_ID)$(SYSTEMD_DIR_PATH)
 
+.PHONY: get-pdns-conf
+get-pdns-conf:
+	mkdir -p ~/$(SERVER_ID)$(PDNS_DIR_PATH)
+	rsync -qauh $(PDNS_PATH) ~/$(SERVER_ID)$(PDNS_DIR_PATH)
+	rsync -qauh $(PDNS_PATH).sh ~/$(SERVER_ID)$(PDNS_DIR_PATH)
+
 .PHONY: get-envsh
 get-envsh:
 	mkdir -p ~/$(SERVER_ID)$(ENVSH_DIR_PATH)
@@ -331,6 +339,10 @@ deploy-nginx-conf:
 deploy-service-file:
 	sudo rsync -qauh --no-o --no-g ~/$(SERVER_ID)$(SYSTEMD_PATH) $(SYSTEMD_DIR_PATH)
 
+.PHONY: deploy-pdns-conf
+deploy-pdns-conf:
+	sudo rsync -qauh --no-o --no-g ~/$(SERVER_ID)$(PDNS_PATH) $(PDNS_DIR_PATH)
+
 .PHONY: deploy-envsh
 deploy-envsh:
 	sudo rsync -qauh --no-o --no-g ~/$(SERVER_ID)$(ENVSH_PATH) $(ENVSH_DIR_PATH)
@@ -346,6 +358,7 @@ restart:
 	sudo systemctl daemon-reload
 	sudo systemctl restart mysql
 	sudo systemctl restart nginx
+	sudo systemctl restart pdns
 	sudo systemctl restart $(SERVICE_NAME)
 
 .PHONY: rotate
