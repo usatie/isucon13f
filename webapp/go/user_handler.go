@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"crypto/sha256"
 	"database/sql"
@@ -9,7 +10,6 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"os/exec"
 	"time"
 
 	"github.com/google/uuid"
@@ -205,6 +205,56 @@ func getMeHandler(c echo.Context) error {
 
 // ユーザ登録API
 // POST /api/register
+func addRecord(hostname, recordName, recordType, content string, ttl int) error {
+	apiURL := "http://192.168.0.13:8081/api/v1/servers/localhost/zones/" + hostname
+	apiKey := "isudns"
+
+	// リクエストボディを構築
+	requestBody, err := json.Marshal(map[string]interface{}{
+		"rrsets": []map[string]interface{}{
+			{
+				"name":       recordName,
+				"type":       recordType,
+				"ttl":        ttl,
+				"changetype": "REPLACE",
+				"records": []map[string]interface{}{
+					{
+						"content":  content,
+						"disabled": false,
+					},
+				},
+			},
+		},
+	})
+	if err != nil {
+		return err
+	}
+
+	// HTTPリクエストを作成
+	fmt.Printf("Request body: %s\n", requestBody)
+	req, err := http.NewRequest("PATCH", apiURL, bytes.NewBuffer(requestBody))
+	if err != nil {
+		return err
+	}
+	req.Header.Set("X-API-Key", apiKey)
+	req.Header.Set("Content-Type", "application/json")
+
+	// HTTPリクエストを実行
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	// レスポンスを検証
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("PowerDNS API error: %s", resp.Status)
+	}
+
+	return nil
+}
+
 func registerHandler(c echo.Context) error {
 	ctx := c.Request().Context()
 	defer c.Request().Body.Close()
@@ -256,8 +306,14 @@ func registerHandler(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to insert user theme: "+err.Error())
 	}
 
-	if out, err := exec.Command("pdnsutil", "add-record", "u.isucon.dev", req.Name, "A", "0", powerDNSSubdomainAddress).CombinedOutput(); err != nil {
-		return echo.NewHTTPError(http.StatusInternalServerError, string(out)+": "+err.Error())
+	fmt.Println("pdnsutil add-record u.isucon.dev", req.Name, "A", "0", powerDNSSubdomainAddress)
+	/*
+		if out, err := exec.Command("pdnsutil", "add-record", "u.isucon.dev", req.Name, "A", "0", powerDNSSubdomainAddress).CombinedOutput(); err != nil {
+			return echo.NewHTTPError(http.StatusInternalServerError, string(out)+": "+err.Error())
+		}
+	*/
+	if err := addRecord("u.isucon.dev", req.Name+".u.isucon.dev", "A", powerDNSSubdomainAddress, 120); err != nil {
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to add record: "+err.Error())
 	}
 
 	user, err := fillUserResponse(ctx, tx, userModel)
