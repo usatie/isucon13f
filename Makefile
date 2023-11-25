@@ -313,6 +313,7 @@ get-service-file:
 get-envsh:
 	mkdir -p ~/$(SERVER_ID)$(ENVSH_DIR_PATH)
 	rsync -qauh $(ENVSH_PATH) ~/$(SERVER_ID)$(ENVSH_DIR_PATH)
+	rsync -qauh $(ENVSH_PATH).sh ~/$(SERVER_ID)$(ENVSH_DIR_PATH)
 
 .PHONY: deploy-db-conf
 deploy-db-conf:
@@ -329,6 +330,7 @@ deploy-service-file:
 .PHONY: deploy-envsh
 deploy-envsh:
 	sudo rsync -qauh --no-o --no-g ~/$(SERVER_ID)$(ENVSH_PATH) $(ENVSH_DIR_PATH)
+	sudo rsync -qauh --no-o --no-g ~/$(SERVER_ID)$(ENVSH_PATH).sh $(ENVSH_DIR_PATH)
 
 .PHONY: build
 build:
