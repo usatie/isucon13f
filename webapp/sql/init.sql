@@ -58,6 +58,40 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+
+DROP PROCEDURE IF EXISTS RecreateFullTextIndexIfNeeded;
+CREATE PROCEDURE RecreateFullTextIndexIfNeeded(
+    IN p_database_name VARCHAR(255),
+    IN p_table_name VARCHAR(255),
+    IN p_index_name VARCHAR(255),
+    IN p_index_columns VARCHAR(255)
+)
+BEGIN
+    DECLARE indexExists INT;
+
+    SELECT COUNT(*)
+    INTO indexExists
+    FROM INFORMATION_SCHEMA.STATISTICS
+    WHERE table_schema = p_database_name
+      AND table_name = p_table_name
+      AND index_name = p_index_name;
+
+    IF indexExists > 0 THEN
+        SET @s = CONCAT('DROP INDEX ', p_index_name, ' ON ', p_database_name, '.', p_table_name);
+        PREPARE stmt FROM @s;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+    END IF;
+
+    SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' ADD FULLTEXT INDEX ', p_index_name, '(', p_index_columns, ')');
+    PREPARE stmt FROM @s;
+    EXECUTE stmt;
+    DEALLOCATE PREPARE stmt;
+END //
+
+DELIMITER ;
+
 CALL RecreateIndexIfNeeded('isupipe', 'livestream_tags', 'livestream_id_idx', 'livestream_id');
 CALL RecreateIndexIfNeeded('isupipe', 'icons', 'user_id_idx', 'user_id');
 CALL RecreateIndexIfNeeded('isudns', 'records', 'name_idx', 'name');
@@ -66,3 +100,4 @@ CALL RecreateIndexIfNeeded('isupipe', 'livecomments', 'livestream_id_idx', 'live
 CALL RecreateIndexIfNeeded('isupipe', 'themes', 'user_id_idx', 'user_id');
 CALL RecreateIndexIfNeeded('isupipe', 'reservation_slots', 'start_end_idx', 'start_at, end_at');
 CALL RecreateIndexIfNeeded('isupipe', 'ng_words', 'user_livestream_id_idx', 'user_id, livestream_id');
+CALL RecreateFullTextIndexIfNeeded('isupipe', 'livecomments', 'comment_full_text_idx', 'comment');
