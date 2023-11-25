@@ -116,7 +116,8 @@ func getUserStatisticsHandler(c echo.Context) error {
 	GROUP BY
 	  u.name
 	ORDER BY
-	  score ASC;
+	  score ASC,
+	  u.name ASC;
 	`
 	if err := tx.SelectContext(ctx, &ranking, query); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get ranking: "+err.Error())
@@ -235,7 +236,7 @@ func getLivestreamStatisticsHandler(c echo.Context) error {
 	LEFT JOIN (
 	  SELECT
 		livestream_id,
-		SUM(tip) AS tip
+		IFNULL(SUM(tip), 0) AS tip
 	  FROM
 		livecomments
 	  GROUP BY
@@ -244,7 +245,8 @@ func getLivestreamStatisticsHandler(c echo.Context) error {
 	GROUP BY
 	  l.id
 	ORDER BY
-	  score ASC;
+	  score ASC,
+	  l.id ASC;
 	`
 	if err := tx.SelectContext(ctx, &ranking, query); err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get ranking: "+err.Error())
