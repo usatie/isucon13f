@@ -91,6 +91,8 @@ var (
 	userModelCache sync.Map
 	userCache sync.Map
 	imageCache sync.Map
+	fallbackIcon, _ = os.ReadFile(fallbackImage)
+	fallbackIconHash = fmt.Sprintf("%x", sha256.Sum256(fallbackIcon))
 )
 
 func getUserModel(ctx context.Context, tx *sqlx.Tx, username string) (UserModel, error) {
@@ -117,12 +119,31 @@ func getUserByID(ctx context.Context, tx *sqlx.Tx, userID int64) (User, error) {
 		return User{}, err
 	}
 
-	user, err := fillUserResponse(ctx, tx, userModel)
-	if err != nil {
+	themeModel := ThemeModel{}
+	if err := tx.GetContext(ctx, &themeModel, "SELECT * FROM themes WHERE user_id = ?", userModel.ID); err != nil {
 		return User{}, err
 	}
 
-	userCache.Store(userID, user)
+	var iconHash string
+	if err := tx.GetContext(ctx, &iconHash, "SELECT hash FROM icons WHERE user_id = ?", userModel.ID); err != nil {
+		if !errors.Is(err, sql.ErrNoRows) {
+			return User{}, err
+		}
+		iconHash = fallbackIconHash
+	}
+
+	user := User{
+		ID:          userModel.ID,
+		Name:        userModel.Name,
+		DisplayName: userModel.DisplayName,
+		Description: userModel.Description,
+		Theme: Theme{
+			ID:       themeModel.ID,
+			DarkMode: themeModel.DarkMode,
+		},
+		IconHash: iconHash,
+	}
+	userCache.Store(userModel.ID, user)
 
 	return user, nil
 }
@@ -161,16 +182,8 @@ func getIconHandler(c echo.Context) error {
 		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
-	var user User
-	if user, err = getUserByID(ctx, tx, usermodel.ID); err != nil {
-		if errors.Is(err, sql.ErrNoRows) {
-			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
-		}
-		return echo.NewHTTPError(http.StatusInternalServerError, "failed to fill user: "+err.Error())
-	}
-
 	var image []byte
-	if image, err = getImage(ctx, tx, user.ID); err != nil {
+	if image, err = getImage(ctx, tx, usermodel.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return c.File(fallbackImage)
 		} else {
@@ -525,44 +538,4 @@ func verifyUserSession(c echo.Context) error {
 	}
 
 	return nil
-}
-
-var (
-	fallbackIcon, _ = os.ReadFile(fallbackImage)
-	fallbackIconHash = fmt.Sprintf("%x", sha256.Sum256(fallbackIcon))
-)
-
-func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (User, error) {
-	v, ok := userCache.Load(userModel.ID)
-	if ok {
-		return v.(User), nil
-	}
-
-	themeModel := ThemeModel{}
-	if err := tx.GetContext(ctx, &themeModel, "SELECT * FROM themes WHERE user_id = ?", userModel.ID); err != nil {
-		return User{}, err
-	}
-
-	var iconHash string
-	if err := tx.GetContext(ctx, &iconHash, "SELECT hash FROM icons WHERE user_id = ?", userModel.ID); err != nil {
-		if !errors.Is(err, sql.ErrNoRows) {
-			return User{}, err
-		}
-		iconHash = fallbackIconHash
-	}
-
-	user := User{
-		ID:          userModel.ID,
-		Name:        userModel.Name,
-		DisplayName: userModel.DisplayName,
-		Description: userModel.Description,
-		Theme: Theme{
-			ID:       themeModel.ID,
-			DarkMode: themeModel.DarkMode,
-		},
-		IconHash: iconHash,
-	}
-	userCache.Store(userModel.ID, user)
-
-	return user, nil
 }
