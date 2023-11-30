@@ -12,6 +12,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+	"sync"
 
 	"github.com/google/uuid"
 	"github.com/gorilla/sessions"
@@ -159,6 +160,12 @@ func postIconHandler(c echo.Context) error {
 
 	if err := tx.Commit(); err != nil {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to commit: "+err.Error())
+	}
+
+	if user, ok := userCache.Load(userID); ok {
+		v := user.(User)
+		v.IconHash = iconHashStr
+		userCache.Store(userID, v)
 	}
 
 	return c.JSON(http.StatusCreated, &PostIconResponse{
@@ -461,9 +468,15 @@ func verifyUserSession(c echo.Context) error {
 var (
 	fallbackIcon, _ = os.ReadFile(fallbackImage)
 	fallbackIconHash = fmt.Sprintf("%x", sha256.Sum256(fallbackIcon))
+	userCache sync.Map
 )
 
 func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (User, error) {
+	v, ok := userCache.Load(userModel.ID)
+	if ok {
+		return v.(User), nil
+	}
+
 	themeModel := ThemeModel{}
 	if err := tx.GetContext(ctx, &themeModel, "SELECT * FROM themes WHERE user_id = ?", userModel.ID); err != nil {
 		return User{}, err
@@ -488,6 +501,7 @@ func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (Us
 		},
 		IconHash: iconHash,
 	}
+	userCache.Store(userModel.ID, user)
 
 	return user, nil
 }
