@@ -88,22 +88,22 @@ type PostIconResponse struct {
 }
 
 var (
-	userIdByNameCache sync.Map
+	userModelCache sync.Map
 	userCache sync.Map
 	imageCache sync.Map
 )
 
-func getUserIdByName(ctx context.Context, tx *sqlx.Tx, username string) (int64, error) {
-	v, ok := userIdByNameCache.Load(username)
+func getUserModel(ctx context.Context, tx *sqlx.Tx, username string) (UserModel, error) {
+	v, ok := userModelCache.Load(username)
 	if ok {
-		return v.(int64), nil
+		return v.(UserModel), nil
 	}
-
-	var userID int64
-	if err := tx.GetContext(ctx, &userID, "SELECT id FROM users WHERE name = ?", username); err != nil {
-		return 0, err
+	var userModel UserModel
+	if err := tx.GetContext(ctx, &userModel, "SELECT * FROM users WHERE name = ?", username); err != nil {
+		return UserModel{}, err
 	}
-	return userID, nil
+	userModelCache.Store(username, userModel)
+	return userModel, nil
 }
 
 func getUserByID(ctx context.Context, tx *sqlx.Tx, userID int64) (User, error) {
@@ -154,15 +154,15 @@ func getIconHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	var userId int64
-	if userId, err = getUserIdByName(ctx, tx, username); err != nil {
+	var usermodel UserModel
+	if usermodel, err = getUserModel(ctx, tx, username); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
 	var user User
-	if user, err = getUserByID(ctx, tx, userId); err != nil {
+	if user, err = getUserByID(ctx, tx, usermodel.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
@@ -381,14 +381,22 @@ func registerHandler(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to add record: "+err.Error())
 	}
 
-	user, err := fillUserResponse(ctx, tx, userModel)
-	if err != nil {
-		return echo.NewHTTPError(http.StatusInternalServerError, "failed to fill user: "+err.Error())
-	}
-
 	if err := tx.Commit(); err != nil {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to commit: "+err.Error())
 	}
+	user := User{
+		ID:          userModel.ID,
+		Name:        userModel.Name,
+		DisplayName: userModel.DisplayName,
+		Description: userModel.Description,
+		Theme: Theme{
+			ID:       themeModel.ID,
+			DarkMode: themeModel.DarkMode,
+		},
+		IconHash: fallbackIconHash,
+	}
+	userCache.Store(userID, user)
+	userModelCache.Store(req.Name, userModel)
 
 	return c.JSON(http.StatusCreated, user)
 }
@@ -411,12 +419,10 @@ func loginHandler(c echo.Context) error {
 	defer tx.Rollback()
 
 	userModel := UserModel{}
-	// usernameはUNIQUEなので、whereで一意に特定できる
-	err = tx.GetContext(ctx, &userModel, "SELECT * FROM users WHERE name = ?", req.Username)
-	if errors.Is(err, sql.ErrNoRows) {
-		return echo.NewHTTPError(http.StatusUnauthorized, "invalid username or password")
-	}
-	if err != nil {
+	if userModel, err = getUserModel(ctx, tx, req.Username); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return echo.NewHTTPError(http.StatusUnauthorized, "invalid username or password")
+		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
 
@@ -475,15 +481,15 @@ func getUserHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	var userId int64
-	if userId, err = getUserIdByName(ctx, tx, username); err != nil {
+	var usermodel UserModel
+	if usermodel, err = getUserModel(ctx, tx, username); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
 	var user User
-	if user, err = getUserByID(ctx, tx, userId); err != nil {
+	if user, err = getUserByID(ctx, tx, usermodel.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
