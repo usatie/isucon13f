@@ -468,11 +468,11 @@ func verifyUserSession(c echo.Context) error {
 var (
 	fallbackIcon, _ = os.ReadFile(fallbackImage)
 	fallbackIconHash = fmt.Sprintf("%x", sha256.Sum256(fallbackIcon))
-	userCache sync.Map
+	iconCache sync.Map
 )
 
 func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (User, error) {
-	v, ok := userCache.Load(userModel.ID)
+	v, ok := iconCache.Load(userModel.ID)
 	if ok {
 		return v.(User), nil
 	}
@@ -501,7 +501,7 @@ func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (Us
 		},
 		IconHash: iconHash,
 	}
-	userCache.Store(userModel.ID, user)
+	iconCache.Store(userModel.ID, user)
 
 	return user, nil
 }
