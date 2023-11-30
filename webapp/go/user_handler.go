@@ -207,7 +207,7 @@ func getMeHandler(c echo.Context) error {
 // ユーザ登録API
 // POST /api/register
 func addRecord(hostname, recordName, recordType, content string, ttl int) error {
-	apiURL := "http://192.168.0.13:8081/api/v1/servers/localhost/zones/" + hostname
+	apiURL := "http://52.195.188.230:8081/api/v1/servers/localhost/zones/" + hostname
 	apiKey := "isudns"
 
 	// リクエストボディを構築
