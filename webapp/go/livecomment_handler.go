@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"strconv"
 	"time"
+	"strings"
 
 	"github.com/jmoiron/sqlx"
 	"github.com/labstack/echo-contrib/session"
@@ -158,6 +159,15 @@ func getNgwords(c echo.Context) error {
 	return c.JSON(http.StatusOK, ngWords)
 }
 
+func containsNgwords(comment string, ngwords []*NGWord) bool {
+	for _, ngword := range ngwords {
+        if strings.Contains(comment, ngword.Word) {
+            return true
+        }
+    }
+    return false
+}
+
 func postLivecommentHandler(c echo.Context) error {
 	ctx := c.Request().Context()
 	defer c.Request().Body.Close()
@@ -202,7 +212,12 @@ func postLivecommentHandler(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get NG words: "+err.Error())
 	}
 
-	var hitSpam int
+	// Use regular expression of Go
+	// to check if req.Comment contains ngword.Word for ngword in ngwords
+	if containsNgwords(req.Comment, ngwords) {
+		return echo.NewHTTPError(http.StatusBadRequest, "このコメントがスパム判定されました")
+	}
+	/*
 	for _, ngword := range ngwords {
 		query := `
 		SELECT COUNT(*)
@@ -220,6 +235,7 @@ func postLivecommentHandler(c echo.Context) error {
 			return echo.NewHTTPError(http.StatusBadRequest, "このコメントがスパム判定されました")
 		}
 	}
+	*/
 
 	now := time.Now().Unix()
 	livecommentModel := LivecommentModel{

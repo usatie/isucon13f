@@ -11,6 +11,7 @@ import (
 	"os"
 	"os/exec"
 	"strconv"
+	"runtime"
 
 	_ "net/http/pprof"
 
@@ -129,10 +130,10 @@ func main() {
 	//log.SetOutput(ioutil.Discard)
 
 	// pprof
-	//runtime.SetBlockProfileRate(1)
-	//go func() {
-	//	log.Fatal(http.ListenAndServe(":6060", nil))
-	//}()
+	runtime.SetBlockProfileRate(1)
+	go func() {
+		log.Fatal(http.ListenAndServe(":6060", nil))
+	}()
 
 	// Echo
 	e := echo.New()
