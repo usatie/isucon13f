@@ -1,0 +1,2519 @@
+top - 05:29:02 up  1:43,  1 user,  load average: 0.33, 0.61, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.8 us, 19.4 sy,  0.0 ni, 54.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.7 free,    854.2 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2584.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10715 isucon    20   0   24436  17904   6528 S  31.2   0.5   0:00.05 dstat
+  10583 mysql     20   0 5039560 657520  36864 S  18.8  17.4   0:01.05 mysqld
+   7602 isucon    20   0   14892   9892   6656 S  12.5   0.3   0:02.25 zsh
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:03 up  1:43,  1 user,  load average: 0.33, 0.61, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.7 free,    854.2 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2584.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 657648  36864 S   3.0  17.4   0:01.08 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:04 up  1:43,  1 user,  load average: 0.33, 0.61, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 98.0 id,  2.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.7 free,    854.2 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2584.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:05 up  1:43,  1 user,  load average: 0.33, 0.61, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:06 up  1:43,  1 user,  load average: 0.30, 0.60, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.0 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 658544  36864 S   1.0  17.4   0:01.09 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:07 up  1:43,  1 user,  load average: 0.30, 0.60, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  0.0 sy,  0.0 ni, 98.5 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.06 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:08 up  1:43,  1 user,  load average: 0.30, 0.60, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.5 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   2.0   0.1   0:00.02 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:09 up  1:43,  1 user,  load average: 0.30, 0.60, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.5 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:10 up  1:43,  1 user,  load average: 0.30, 0.60, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.5 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:11 up  1:43,  1 user,  load average: 0.28, 0.59, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 658672  36864 S   1.0  17.4   0:01.10 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:12 up  1:43,  1 user,  load average: 0.28, 0.59, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:13 up  1:43,  1 user,  load average: 0.28, 0.59, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.5 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:14 up  1:43,  1 user,  load average: 0.28, 0.59, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:15 up  1:43,  1 user,  load average: 0.28, 0.59, 0.77
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:16 up  1:43,  1 user,  load average: 0.26, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.03 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:17 up  1:43,  1 user,  load average: 0.26, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 658672  36864 S   1.0  17.4   0:01.11 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:18 up  1:43,  1 user,  load average: 0.26, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:19 up  1:43,  1 user,  load average: 0.26, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:20 up  1:43,  1 user,  load average: 0.26, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 658672  36864 S   1.0  17.4   0:01.12 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.07 dstat
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.04 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:21 up  1:44,  1 user,  load average: 0.23, 0.57, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:22 up  1:44,  1 user,  load average: 0.23, 0.57, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:23 up  1:44,  1 user,  load average: 0.23, 0.57, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:24 up  1:44,  1 user,  load average: 0.23, 0.57, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.0 us,  1.5 sy,  0.0 ni, 71.5 id, 24.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5039560 661744  36992 S   6.9  17.5   0:01.19 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:25 up  1:44,  1 user,  load average: 0.23, 0.57, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.7 us,  5.1 sy,  0.0 ni, 46.2 id, 38.5 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1602.4 free,    854.4 used,   1238.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2583.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5072344 671344  37504 S  31.0  17.7   0:01.50 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.78 jbd2/nvme0n1p1-8
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.08 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:26 up  1:44,  1 user,  load average: 0.38, 0.59, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.8 us,  4.6 sy,  0.0 ni, 57.9 id, 24.1 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1560.8 free,    887.7 used,   1247.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2550.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5072344 673800  37504 S  37.0  17.8   0:01.87 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.05 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:27 up  1:44,  1 user,  load average: 0.38, 0.59, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.7 us,  2.5 sy,  0.0 ni, 51.3 id, 33.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1560.8 free,    887.7 used,   1247.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2550.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5072344 710408  37504 S  31.7  18.8   0:02.19 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.79 jbd2/nvme0n1p1-8
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.06 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:28 up  1:44,  1 user,  load average: 0.38, 0.59, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 11.9 us,  2.1 sy,  0.0 ni, 67.5 id, 17.0 wa,  0.0 hi,  1.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1560.8 free,    887.7 used,   1247.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2550.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713580  37632 S  33.0  18.9   0:02.52 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:29 up  1:44,  1 user,  load average: 0.38, 0.59, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 19.2 us,  3.5 sy,  0.0 ni, 65.2 id, 10.6 wa,  0.0 hi,  1.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1540.9 free,    898.8 used,   1256.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713708  37632 S  47.0  18.9   0:02.99 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:30 up  1:44,  1 user,  load average: 0.38, 0.59, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  7.1 us,  2.5 sy,  0.0 ni, 79.7 id,  8.6 wa,  0.0 hi,  2.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1540.9 free,    898.8 used,   1256.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713708  37632 S  22.8  18.9   0:03.22 mysqld
+   5580 root      20   0       0      0      0 I   1.0   0.0   0:00.23 kworker/u4:2-ext4-rsv-conversion
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:31 up  1:44,  1 user,  load average: 0.35, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 94.6 id,  4.5 wa,  0.0 hi,  0.0 si,  0.5 st
+MiB Mem :   3695.7 total,   1540.9 free,    898.8 used,   1256.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713708  37632 S   1.0  18.9   0:03.23 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.09 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:32 up  1:44,  1 user,  load average: 0.35, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.5 us,  0.5 sy,  0.0 ni, 96.5 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1540.4 free,    898.4 used,   1256.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713708  37632 S   6.0  18.9   0:03.29 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.80 jbd2/nvme0n1p1-8
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.07 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:33 up  1:44,  1 user,  load average: 0.35, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.0 us,  0.5 sy,  0.0 ni, 90.5 id,  6.5 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1540.4 free,    898.4 used,   1256.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5073372 713708  37632 S   4.0  18.9   0:03.33 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:34 up  1:44,  1 user,  load average: 0.35, 0.58, 0.76
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.0 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1540.4 free,    898.4 used,   1256.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2539.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:29:35 up  1:44,  1 user,  load average: 0.35, 0.58, 0.76
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  8.4 us,  2.0 sy,  0.0 ni, 84.7 id,  4.0 wa,  0.0 hi,  1.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1537.4 free,    900.7 used,   1257.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2537.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5075436 714604  37632 S  20.0  18.9   0:03.53 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:36 up  1:44,  1 user,  load average: 1.04, 0.72, 0.80
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 60.3 us, 10.8 sy,  0.0 ni, 19.6 id,  4.6 wa,  0.0 hi,  4.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1537.4 free,    900.7 used,   1257.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2537.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5120548 758636  37632 S 152.0  20.0   0:05.05 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:37 up  1:44,  1 user,  load average: 1.04, 0.72, 0.80
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 72.5 us, 15.7 sy,  0.0 ni,  5.4 id,  0.0 wa,  0.0 hi,  6.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1537.4 free,    900.7 used,   1257.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2537.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5120816 761964  37632 S 186.1  20.1   0:06.93 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.08 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:38 up  1:44,  1 user,  load average: 1.04, 0.72, 0.80
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.0 us, 17.7 sy,  0.0 ni,  4.4 id,  1.0 wa,  0.0 hi,  8.9 si,  0.0 st
+MiB Mem :   3695.7 total,   1455.8 free,    965.8 used,   1274.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2472.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5124948 771232  37632 S 189.0  20.4   0:08.82 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:39 up  1:44,  1 user,  load average: 1.04, 0.72, 0.80
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 64.2 us, 19.1 sy,  0.0 ni,  7.8 id,  0.0 wa,  0.0 hi,  8.8 si,  0.0 st
+MiB Mem :   3695.7 total,   1455.8 free,    965.8 used,   1274.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2472.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5124948 773280  37632 S 181.2  20.4   0:10.65 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:40 up  1:44,  1 user,  load average: 1.04, 0.72, 0.80
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.2 us, 18.9 sy,  0.0 ni,  7.0 id,  1.5 wa,  0.0 hi,  9.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1455.8 free,    965.8 used,   1274.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2472.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5124948 775712  37632 S 182.0  20.5   0:12.47 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.09 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:41 up  1:44,  1 user,  load average: 1.36, 0.79, 0.83
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.2 us, 18.4 sy,  0.0 ni,  5.5 id,  1.0 wa,  0.0 hi,  9.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1426.1 free,    978.9 used,   1290.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2459.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 778536  37632 S 186.0  20.6   0:14.33 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.10 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:42 up  1:44,  1 user,  load average: 1.36, 0.79, 0.83
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.0 us, 17.7 sy,  0.0 ni,  5.9 id,  1.5 wa,  0.0 hi,  6.9 si,  0.0 st
+MiB Mem :   3695.7 total,   1426.1 free,    978.9 used,   1290.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2459.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 780840  37632 S 182.2  20.6   0:16.17 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:43 up  1:44,  1 user,  load average: 1.36, 0.79, 0.83
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.2 us, 16.2 sy,  0.0 ni,  7.4 id,  1.5 wa,  0.0 hi,  8.8 si,  0.0 st
+MiB Mem :   3695.7 total,   1426.1 free,    978.9 used,   1290.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2459.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 782248  37632 S 182.0  20.7   0:17.99 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:44 up  1:44,  1 user,  load average: 1.36, 0.79, 0.83
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 70.6 us, 15.5 sy,  0.0 ni,  6.7 id,  1.5 wa,  0.0 hi,  5.7 si,  0.0 st
+MiB Mem :   3695.7 total,   1394.3 free,    994.8 used,   1306.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2443.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 785128  37632 S 180.2  20.7   0:19.81 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.81 jbd2/nvme0n1p1-8
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.10 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:45 up  1:44,  1 user,  load average: 1.36, 0.79, 0.83
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.2 us, 16.9 sy,  0.0 ni,  8.0 id,  1.5 wa,  0.0 hi, 10.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1394.3 free,    994.8 used,   1306.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2443.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 787432  37632 S 180.0  20.8   0:21.61 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:46 up  1:44,  1 user,  load average: 1.97, 0.93, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.3 us, 16.1 sy,  0.0 ni,  7.0 id,  1.5 wa,  0.0 hi,  9.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1394.3 free,    994.8 used,   1306.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2443.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5125976 789096  37632 S 181.2  20.9   0:23.44 mysqld
+     22 root      20   0       0      0      0 S   1.0   0.0   0:00.33 ksoftirqd/1
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:47 up  1:44,  1 user,  load average: 1.97, 0.93, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 64.8 us, 20.1 sy,  0.0 ni,  5.5 id,  2.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1367.4 free,   1005.2 used,   1323.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2432.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5127004 792384  37632 S 183.0  20.9   0:25.27 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.11 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:48 up  1:44,  1 user,  load average: 1.97, 0.93, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 67.3 us, 16.3 sy,  0.0 ni,  6.4 id,  1.5 wa,  0.0 hi,  8.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1367.4 free,   1005.2 used,   1323.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2432.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5127004 793536  37632 S 183.0  21.0   0:27.10 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:49 up  1:44,  1 user,  load average: 1.97, 0.93, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.5 us, 17.5 sy,  0.0 ni,  6.5 id,  3.0 wa,  0.0 hi,  7.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1367.4 free,   1005.2 used,   1323.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2432.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5127004 795072  37632 S 178.2  21.0   0:28.90 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.11 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+
+top - 05:29:50 up  1:44,  1 user,  load average: 1.97, 0.93, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.8 us, 14.6 sy,  0.0 ni,  8.0 id,  3.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1343.6 free,   1013.2 used,   1338.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2425.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5129060 798528  37632 S 176.0  21.1   0:30.66 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.82 jbd2/nvme0n1p1-8
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.12 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:51 up  1:44,  1 user,  load average: 1.81, 0.91, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.0 us, 20.3 sy,  0.0 ni,  5.6 id,  1.5 wa,  0.0 hi,  7.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1343.6 free,   1013.2 used,   1338.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2425.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5129060 801764  37632 S 184.2  21.2   0:32.52 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.28 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:29:52 up  1:44,  1 user,  load average: 1.81, 0.91, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.7 us, 14.4 sy,  0.0 ni,  5.5 id,  3.5 wa,  0.0 hi,  7.5 si,  0.5 st
+MiB Mem :   3695.7 total,   1343.6 free,   1013.2 used,   1338.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2425.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 804216  37632 S 179.0  21.3   0:34.31 mysqld
+     13 root      20   0       0      0      0 S   1.0   0.0   0:00.29 ksoftirqd/0
+  10440 root      20   0       0      0      0 I   1.0   0.0   0:00.01 kworker/1:2-events
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:53 up  1:44,  1 user,  load average: 1.81, 0.91, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.7 us, 17.4 sy,  0.0 ni,  8.5 id,  4.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1313.4 free,   1027.0 used,   1355.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2411.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 806264  37632 S 173.0  21.3   0:36.04 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.13 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:29:54 up  1:44,  1 user,  load average: 1.81, 0.91, 0.87
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 67.0 us, 15.0 sy,  0.0 ni,  7.0 id,  2.0 wa,  0.0 hi,  9.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1313.4 free,   1027.0 used,   1355.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2411.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 808056  37632 S 180.2  21.4   0:37.86 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.83 jbd2/nvme0n1p1-8
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:29:55 up  1:44,  1 user,  load average: 1.81, 0.91, 0.87
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 61.0 us, 21.0 sy,  0.0 ni,  5.5 id,  2.5 wa,  0.0 hi, 10.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1313.4 free,   1027.0 used,   1355.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2411.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 809208  37632 S 180.0  21.4   0:39.66 mysqld
+  10538 root      20   0       0      0      0 D   2.0   0.0   0:00.02 kworker/u4:1+flush-259:0
+   5580 root      20   0       0      0      0 I   1.0   0.0   0:00.24 kworker/u4:2-ext4-rsv-conversion
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:29:56 up  1:44,  1 user,  load average: 2.39, 1.05, 0.91
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.4 us, 18.5 sy,  0.0 ni,  7.3 id,  1.5 wa,  0.0 hi,  9.3 si,  0.0 st
+MiB Mem :   3695.7 total,   1320.3 free,   1004.3 used,   1371.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2433.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 810616  37632 S 181.0  21.4   0:41.47 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.14 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:29:57 up  1:44,  1 user,  load average: 2.39, 1.05, 0.91
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 60.9 us, 16.2 sy,  0.0 ni, 10.7 id,  5.1 wa,  0.0 hi,  7.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1320.3 free,   1004.3 used,   1371.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2433.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 813048  37632 S 166.3  21.5   0:43.15 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.12 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:29:58 up  1:44,  1 user,  load average: 2.39, 1.05, 0.91
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.0 us, 17.5 sy,  0.0 ni,  8.5 id,  1.5 wa,  0.0 hi,  7.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1320.3 free,   1004.3 used,   1371.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2433.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 814328  37632 S 179.0  21.5   0:44.94 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.15 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:29:59 up  1:44,  1 user,  load average: 2.39, 1.05, 0.91
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.9 us, 20.8 sy,  0.0 ni,  9.1 id,  0.5 wa,  0.0 hi,  6.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1287.9 free,   1019.6 used,   1388.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2418.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130088 816120  37632 S 177.2  21.6   0:46.73 mysqld
+     22 root      20   0       0      0      0 S   1.0   0.0   0:00.34 ksoftirqd/1
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:00 up  1:44,  1 user,  load average: 2.39, 1.05, 0.91
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.7 us, 18.4 sy,  0.0 ni,  4.5 id,  0.5 wa,  0.0 hi,  8.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1287.9 free,   1019.6 used,   1388.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2418.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 818532  37632 S 190.0  21.6   0:48.63 mysqld
+  10650 root      20   0       0      0      0 I   1.0   0.0   0:00.01 kworker/0:1-events
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:02 up  1:44,  1 user,  load average: 2.76, 1.15, 0.94
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.2 us, 18.9 sy,  0.0 ni,  8.0 id,  1.5 wa,  0.0 hi,  6.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1273.4 free,   1023.9 used,   1398.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2413.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 819684  37632 S 180.0  21.7   0:50.43 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.84 jbd2/nvme0n1p1-8
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:03 up  1:44,  1 user,  load average: 2.76, 1.15, 0.94
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 71.5 us, 15.0 sy,  0.0 ni,  6.5 id,  0.5 wa,  0.0 hi,  6.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1273.4 free,   1023.9 used,   1398.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2413.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 821092  37632 S 182.2  21.7   0:52.27 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:04 up  1:44,  1 user,  load average: 2.76, 1.15, 0.94
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 61.2 us, 18.4 sy,  0.0 ni, 10.9 id,  1.0 wa,  0.0 hi,  8.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1273.4 free,   1023.9 used,   1398.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2413.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 822500  37632 S 176.0  21.7   0:54.03 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.16 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:05 up  1:44,  1 user,  load average: 2.76, 1.15, 0.94
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.8 us, 14.4 sy,  0.0 ni,  9.4 id,  2.5 wa,  0.0 hi,  7.9 si,  0.0 st
+MiB Mem :   3695.7 total,   1252.1 free,   1029.1 used,   1414.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2408.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 823780  37632 S 174.0  21.8   0:55.77 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:06 up  1:44,  1 user,  load average: 2.76, 1.15, 0.94
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 61.9 us, 20.3 sy,  0.0 ni,  8.9 id,  2.5 wa,  0.0 hi,  6.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1252.1 free,   1029.1 used,   1414.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2408.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 825188  37632 S 174.3  21.8   0:57.53 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.13 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:07 up  1:44,  1 user,  load average: 2.78, 1.18, 0.95
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.7 us, 15.9 sy,  0.0 ni,  9.0 id,  1.5 wa,  0.0 hi,  8.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1252.1 free,   1029.1 used,   1414.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2408.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5131116 826980  37632 S 179.0  21.9   0:59.32 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.17 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:08 up  1:44,  1 user,  load average: 2.78, 1.18, 0.95
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.2 us, 17.9 sy,  0.0 ni,  6.5 id,  0.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1221.5 free,   1043.7 used,   1430.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 829028  37632 S 185.1  21.9   1:01.19 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:09 up  1:44,  1 user,  load average: 2.78, 1.18, 0.95
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.5 us, 17.5 sy,  0.0 ni,  6.0 id,  1.0 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1221.5 free,   1043.7 used,   1430.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5133172 830436  37632 S 183.0  21.9   1:03.02 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:10 up  1:44,  1 user,  load average: 2.78, 1.18, 0.95
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.5 us, 17.5 sy,  0.0 ni,  6.0 id,  1.0 wa,  0.0 hi,  9.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1221.5 free,   1043.7 used,   1430.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 831936  37632 S 185.0  22.0   1:04.87 mysqld
+  10440 root      20   0       0      0      0 I   1.0   0.0   0:00.02 kworker/1:2-events
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+
+top - 05:30:11 up  1:44,  1 user,  load average: 2.78, 1.18, 0.95
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.5 us, 18.0 sy,  0.0 ni, 11.0 id,  1.5 wa,  0.0 hi,  6.5 si,  0.5 st
+MiB Mem :   3695.7 total,   1195.3 free,   1054.0 used,   1446.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2382.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 833344  37632 S 173.3  22.0   1:06.62 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:12 up  1:44,  1 user,  load average: 3.03, 1.26, 0.98
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.7 us, 17.9 sy,  0.0 ni,  8.0 id,  0.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1195.3 free,   1054.0 used,   1446.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2382.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 834624  37632 S 183.0  22.1   1:08.45 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.85 jbd2/nvme0n1p1-8
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.18 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:13 up  1:44,  1 user,  load average: 3.03, 1.26, 0.98
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.1 us, 20.2 sy,  0.0 ni,  8.6 id,  1.5 wa,  0.0 hi,  7.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1195.3 free,   1054.0 used,   1446.4 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2382.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 836160  37632 S 179.0  22.1   1:10.24 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:14 up  1:44,  1 user,  load average: 3.03, 1.26, 0.98
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.5 us, 17.3 sy,  0.0 ni,  7.6 id,  2.5 wa,  0.0 hi,  7.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1169.8 free,   1063.2 used,   1462.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 837696  37632 S 176.2  22.1   1:12.02 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.14 dstat
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.19 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:15 up  1:44,  1 user,  load average: 3.03, 1.26, 0.98
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.6 us, 18.2 sy,  0.0 ni,  8.1 id,  1.0 wa,  0.0 hi,  9.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1169.8 free,   1063.2 used,   1462.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 838848  37632 S 181.0  22.2   1:13.83 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:16 up  1:44,  1 user,  load average: 3.03, 1.26, 0.98
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.0 us, 20.5 sy,  0.0 ni,  8.0 id,  0.5 wa,  0.0 hi,  8.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1169.8 free,   1063.2 used,   1462.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 840512  37632 S 181.2  22.2   1:15.66 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.29 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:17 up  1:44,  1 user,  load average: 3.83, 1.45, 1.05
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 64.1 us, 17.2 sy,  0.0 ni,  8.1 id,  3.0 wa,  0.0 hi,  7.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1174.0 free,   1042.8 used,   1478.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 842048  37632 S 177.0  22.3   1:17.43 mysqld
+     13 root      20   0       0      0      0 S   1.0   0.0   0:00.30 ksoftirqd/0
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.20 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:18 up  1:44,  1 user,  load average: 3.83, 1.45, 1.05
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 61.5 us, 17.0 sy,  0.0 ni, 10.0 id,  2.0 wa,  0.0 hi,  9.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1174.0 free,   1042.8 used,   1478.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 843712  37632 S 173.0  22.3   1:19.16 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:19 up  1:44,  1 user,  load average: 3.83, 1.45, 1.05
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.9 us, 17.3 sy,  0.0 ni,  8.4 id,  2.0 wa,  0.0 hi,  9.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1174.0 free,   1042.8 used,   1478.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2393.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 844864  37632 S 177.2  22.3   1:20.95 mysqld
+     22 root      20   0       0      0      0 S   1.0   0.0   0:00.35 ksoftirqd/1
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:20 up  1:44,  1 user,  load average: 3.83, 1.45, 1.05
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.7 us, 18.1 sy,  0.0 ni,  5.9 id,  1.5 wa,  0.0 hi,  7.8 si,  0.0 st
+MiB Mem :   3695.7 total,   1141.9 free,   1058.6 used,   1495.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2377.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5132144 846016  37632 S 185.0  22.4   1:22.80 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.86 jbd2/nvme0n1p1-8
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:21 up  1:44,  1 user,  load average: 3.83, 1.45, 1.05
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.8 us, 16.3 sy,  0.0 ni,  7.4 id,  1.0 wa,  0.0 hi,  6.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1141.9 free,   1058.6 used,   1495.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2377.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 849340  37632 S 181.0  22.4   1:24.61 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.21 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:22 up  1:45,  1 user,  load average: 3.85, 1.50, 1.06
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.3 us, 15.1 sy,  0.0 ni,  8.0 id,  1.0 wa,  0.0 hi,  7.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1141.9 free,   1058.6 used,   1495.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2377.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 850836  37632 S 180.2  22.5   1:26.43 mysqld
+  10538 root      20   0       0      0      0 I   1.0   0.0   0:00.03 kworker/u4:1-writeback
+  10650 root      20   0       0      0      0 I   1.0   0.0   0:00.02 kworker/0:1-events
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:23 up  1:45,  1 user,  load average: 3.85, 1.50, 1.06
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 67.5 us, 16.5 sy,  0.0 ni,  9.0 id,  0.5 wa,  0.0 hi,  6.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1120.6 free,   1065.3 used,   1509.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2370.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 851604  37632 S 180.0  22.5   1:28.23 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.15 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:24 up  1:45,  1 user,  load average: 3.85, 1.50, 1.06
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.3 us, 17.6 sy,  0.0 ni,  7.0 id,  1.0 wa,  0.0 hi, 11.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1120.6 free,   1065.3 used,   1509.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2370.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 852756  37632 S 181.2  22.5   1:30.06 mysqld
+     33 root      20   0       0      0      0 S   1.0   0.0   0:00.07 kcompactd0
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.22 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:25 up  1:45,  1 user,  load average: 3.85, 1.50, 1.06
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.2 us, 16.7 sy,  0.0 ni,  7.1 id,  1.0 wa,  0.0 hi,  9.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1120.6 free,   1065.3 used,   1509.8 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2370.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 853780  37632 S 183.0  22.6   1:31.89 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:26 up  1:45,  1 user,  load average: 3.85, 1.50, 1.06
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 66.2 us, 17.4 sy,  0.0 ni,  7.5 id,  1.0 wa,  0.0 hi,  8.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1097.9 free,   1072.9 used,   1524.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2362.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 854804  37632 S 183.0  22.6   1:33.72 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.23 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:27 up  1:45,  1 user,  load average: 4.34, 1.64, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.9 us, 17.1 sy,  0.0 ni,  5.9 id,  3.9 wa,  0.0 hi, 10.2 si,  0.0 st
+MiB Mem :   3695.7 total,   1097.9 free,   1072.9 used,   1524.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2362.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5134200 856596  37632 S 175.2  22.6   1:35.49 mysqld
+   5580 root      20   0       0      0      0 I   1.0   0.0   0:00.25 kworker/u4:2-ext4-rsv-conversion
+  10538 root      20   0       0      0      0 D   1.0   0.0   0:00.04 kworker/u4:1+flush-259:0
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+
+top - 05:30:28 up  1:45,  1 user,  load average: 4.34, 1.64, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.9 us, 15.8 sy,  0.0 ni,  4.5 id, 10.4 wa,  0.0 hi,  5.4 si,  0.0 st
+MiB Mem :   3695.7 total,   1097.9 free,   1072.9 used,   1524.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2362.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5135232 857984  37632 S 167.0  22.7   1:37.16 mysqld
+  10538 root      20   0       0      0      0 I   1.0   0.0   0:00.05 kworker/u4:1-events_unbound
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:29 up  1:45,  1 user,  load average: 4.34, 1.64, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.2 us, 15.4 sy,  0.0 ni,  6.0 id,  1.0 wa,  0.0 hi,  9.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1074.4 free,   1080.8 used,   1540.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2354.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 859520  37632 S 182.2  22.7   1:39.00 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.87 jbd2/nvme0n1p1-8
+   5580 root      20   0       0      0      0 I   1.0   0.0   0:00.26 kworker/u4:2-writeback
+  10440 root      20   0       0      0      0 I   1.0   0.0   0:00.03 kworker/1:2-events
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.24 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+
+top - 05:30:30 up  1:45,  1 user,  load average: 4.34, 1.64, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 63.6 us, 19.5 sy,  0.0 ni,  7.2 id,  1.0 wa,  0.0 hi,  8.2 si,  0.5 st
+MiB Mem :   3695.7 total,   1074.4 free,   1080.8 used,   1540.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2354.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 860800  37632 S 184.0  22.7   1:40.84 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:31 up  1:45,  1 user,  load average: 4.34, 1.64, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 62.9 us, 18.5 sy,  0.0 ni,  7.3 id,  2.4 wa,  0.0 hi,  8.8 si,  0.0 st
+MiB Mem :   3695.7 total,   1074.4 free,   1080.8 used,   1540.5 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2354.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 861952  37632 S 179.0  22.8   1:42.63 mysqld
+  10715 isucon    20   0   24436  18032   6528 S   2.0   0.5   0:00.17 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:32 up  1:45,  1 user,  load average: 4.55, 1.73, 1.14
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 68.2 us, 15.7 sy,  0.0 ni,  6.1 id,  1.0 wa,  0.0 hi,  9.1 si,  0.0 st
+MiB Mem :   3695.7 total,   1083.8 free,   1056.1 used,   1555.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2379.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 863488  37632 S 182.2  22.8   1:44.47 mysqld
+     22 root      20   0       0      0      0 R   1.0   0.0   0:00.36 ksoftirqd/1
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:33 up  1:45,  1 user,  load average: 4.55, 1.73, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 69.3 us, 14.1 sy,  0.0 ni,  7.5 id,  1.5 wa,  0.0 hi,  7.5 si,  0.0 st
+MiB Mem :   3695.7 total,   1083.8 free,   1056.1 used,   1555.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2379.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 864768  37632 S 183.0  22.9   1:46.30 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.25 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:34 up  1:45,  1 user,  load average: 4.55, 1.73, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 59.4 us, 19.3 sy,  0.0 ni,  8.7 id,  4.8 wa,  0.0 hi,  7.7 si,  0.0 st
+MiB Mem :   3695.7 total,   1083.8 free,   1056.1 used,   1555.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2379.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 866176  37632 S 168.3  22.9   1:48.00 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:35 up  1:45,  1 user,  load average: 4.55, 1.73, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 65.2 us, 16.7 sy,  0.0 ni,  7.1 id,  1.5 wa,  0.0 hi,  9.6 si,  0.0 st
+MiB Mem :   3695.7 total,   1063.4 free,   1061.3 used,   1570.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5136260 867456  37632 S 182.0  22.9   1:49.82 mysqld
+     72 root      20   0       0      0      0 S   1.0   0.0   0:00.88 jbd2/nvme0n1p1-8
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:36 up  1:45,  1 user,  load average: 4.55, 1.73, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 40.3 us,  8.5 sy,  0.0 ni, 42.8 id,  1.5 wa,  0.0 hi,  7.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1063.4 free,   1061.3 used,   1570.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S 111.0  22.8   1:50.93 mysqld
+  10650 root      20   0       0      0      0 I   1.0   0.0   0:00.03 kworker/0:1-events
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:37 up  1:45,  1 user,  load average: 4.19, 1.70, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 96.0 id,  4.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1063.4 free,   1061.3 used,   1570.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:38 up  1:45,  1 user,  load average: 4.19, 1.70, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 96.0 id,  4.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.3 used,   1573.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.26 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:39 up  1:45,  1 user,  load average: 4.19, 1.70, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  1.0 sy,  0.0 ni, 90.0 id,  9.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.3 used,   1573.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:50.94 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:40 up  1:45,  1 user,  load average: 4.19, 1.70, 1.14
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  1.0 sy,  0.0 ni, 89.1 id,  9.9 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.3 used,   1573.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:50.95 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:41 up  1:45,  1 user,  load average: 4.19, 1.70, 1.14
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 90.5 id,  9.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.18 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:42 up  1:45,  1 user,  load average: 3.85, 1.67, 1.13
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 92.0 id,  8.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   2.0  22.8   1:50.97 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:43 up  1:45,  1 user,  load average: 3.85, 1.67, 1.13
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.5 sy,  0.0 ni, 93.1 id,  5.9 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.27 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:44 up  1:45,  1 user,  load average: 3.85, 1.67, 1.13
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.5 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:45 up  1:45,  1 user,  load average: 3.85, 1.67, 1.13
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.0 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:50.98 mysqld
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.28 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+
+top - 05:30:46 up  1:45,  1 user,  load average: 3.85, 1.67, 1.13
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2372.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    152 root      rt   0  289308  27392   8960 S   1.0   0.7   0:00.31 multipathd
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:47 up  1:45,  1 user,  load average: 3.54, 1.64, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:48 up  1:45,  1 user,  load average: 3.54, 1.64, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:49 up  1:45,  1 user,  load average: 3.54, 1.64, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:50 up  1:45,  1 user,  load average: 3.54, 1.64, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.29 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:51 up  1:45,  1 user,  load average: 3.54, 1.64, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:52 up  1:45,  1 user,  load average: 3.26, 1.62, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.0 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:50.99 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:53 up  1:45,  1 user,  load average: 3.26, 1.62, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.0 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.30 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:54 up  1:45,  1 user,  load average: 3.26, 1.62, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10715 isucon    20   0   24436  18032   6528 S   1.0   0.5   0:00.19 dstat
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:55 up  1:45,  1 user,  load average: 3.26, 1.62, 1.12
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:51.00 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:56 up  1:45,  1 user,  load average: 3.26, 1.62, 1.12
+Tasks: 116 total,   2 running, 114 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 R   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:57 up  1:45,  1 user,  load average: 3.00, 1.59, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:30:58 up  1:45,  1 user,  load average: 3.00, 1.59, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 99.5 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10716 isucon    20   0   10344   3968   3328 R   1.0   0.1   0:00.31 top
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:30:59 up  1:45,  1 user,  load average: 3.00, 1.59, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 92.5 id,  7.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10538 root      20   0       0      0      0 I   1.0   0.0   0:00.06 kworker/u4:1-ext4-rsv-conversion
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:31:00 up  1:45,  1 user,  load average: 3.00, 1.59, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
+
+top - 05:31:01 up  1:45,  1 user,  load average: 3.00, 1.59, 1.11
+Tasks: 116 total,   1 running, 115 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  10583 mysql     20   0 5130092 862168  37632 S   1.0  22.8   1:51.01 mysqld
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+
+top - 05:31:02 up  1:45,  1 user,  load average: 2.76, 1.56, 1.10
+Tasks: 113 total,   1 running, 112 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.0 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3695.7 total,   1059.4 free,   1062.2 used,   1574.1 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2373.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  102088  12928   8320 S   0.0   0.3   0:03.81 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_rude_kthread
+     12 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_tasks_trace_kthread
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.21 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0
