@@ -1,0 +1,237 @@
+
+# 35.1s user time, 40ms system time, 37.25M rss, 50.86M vsz
+# Current date: Thu Nov 30 06:37:16 2023
+# Hostname: ip-172-31-4-135
+# Files: /var/log/mysql/mysql-slow.log
+# Overall: 567.41k total, 23 unique, 2.85k QPS, 0.54x concurrency ________
+# Time range: 2023-11-30T06:33:22 to 2023-11-30T06:36:41
+# Attribute          total     min     max     avg     95%  stddev  median
+# ============     ======= ======= ======= ======= ======= ======= =======
+# Exec time           107s     1us    61ms   189us   445us   851us   113us
+# Lock time          521ms       0    10ms       0     1us    26us     1us
+# Rows sent          2.41M       0   2.37k    4.46    0.99   98.75       0
+# Rows examine       4.86M       0   4.74k    8.98    2.90  205.29       0
+# Query size        44.67M       5     286   82.56  151.03   49.01  112.70
+
+# Profile
+# Rank Query ID                     Response time Calls  R/Call V/M   Item
+# ==== ============================ ============= ====== ====== ===== ====
+#    1 0x22279D81D51006139E0C764... 28.7231 26.7% 122863 0.0002  0.00 SELECT domains domainmetadata
+#    2 0x42EF7D7D98FBCC9723BF896... 24.5429 22.9%  95303 0.0003  0.00 SELECT records
+#    3 0x0C153C67308B6D18C8B0A67... 18.4560 17.2%   1029 0.0179  0.00 SELECT records
+#    4 0x8F7679D452333ED3C7D60D2... 16.5161 15.4% 254490 0.0001  0.00 ADMIN RESET STMT
+#    5 0x3D83BC87F3B3A00D571FFC8... 16.2997 15.2%  66200 0.0002  0.00 SELECT records
+# MISC 0xMISC                        2.8630  2.7%  27522 0.0001   0.0 <18 ITEMS>
+
+# Query 1: 1.73k QPS, 0.40x concurrency, ID 0x22279D81D51006139E0C76405B54C261 at byte 63455797
+# Scores: V/M = 0.00
+# Time range: 2023-11-30T06:33:36 to 2023-11-30T06:34:47
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         21  122863
+# Exec time     26     29s    76us    14ms   233us   541us   380us   144us
+# Lock time     43   227ms       0     8ms     1us     1us    30us     1us
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    29  13.36M     114     114     114     114       0     114
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  ##
+# 100us  ################################################################
+#   1ms  #
+#  10ms  #
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'domains'\G
+#    SHOW CREATE TABLE `isudns`.`domains`\G
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'domainmetadata'\G
+#    SHOW CREATE TABLE `isudns`.`domainmetadata`\G
+# EXPLAIN /*!50100 PARTITIONS*/
+select kind,content from domains, domainmetadata where domainmetadata.domain_id=domains.id and name='u.isucon.dev'\G
+# *************************** 1. row ***************************
+#            id: 1
+#   select_type: SIMPLE
+#         table: domains
+#    partitions: NULL
+#          type: const
+# possible_keys: PRIMARY,name_index
+#           key: name_index
+#       key_len: 257
+#           ref: const
+#          rows: 1
+#      filtered: 100.00
+#         Extra: Using index
+# *************************** 2. row ***************************
+#            id: 1
+#   select_type: SIMPLE
+#         table: domainmetadata
+#    partitions: NULL
+#          type: ref
+# possible_keys: domainmetadata_idx
+#           key: domainmetadata_idx
+#       key_len: 4
+#           ref: const
+#          rows: 1
+#      filtered: 100.00
+#         Extra: NULL
+
+# Query 2: 1.34k QPS, 0.35x concurrency, ID 0x42EF7D7D98FBCC9723BF896EBFC51D24 at byte 60556321
+# Scores: V/M = 0.00
+# Time range: 2023-11-30T06:33:36 to 2023-11-30T06:34:47
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         16   95303
+# Exec time     22     25s    82us    17ms   257us   596us   412us   159us
+# Lock time     31   165ms       0     6ms     1us     1us    37us     1us
+# Rows sent      0   1.47k       0       1    0.02       0    0.12       0
+# Rows examine   0   1.47k       0       1    0.02       0    0.12       0
+# Query size    29  13.04M     129     218  143.47  158.58   12.68  143.84
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  #
+# 100us  ################################################################
+#   1ms  #
+#  10ms  #
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+# EXPLAIN 
+SELECT content,ttl,prio,type,domain_id,disabled,name,auth FROM records WHERE disabled=0 and name='f39cru0xl7pqhj8kptgc5818ux3u0.u.isucon.dev' and domain_id=2\G
+# *************************** 1. row ***************************
+#            id: 1
+#   select_type: SIMPLE
+#         table: records
+#    partitions: NULL
+#          type: ref
+# possible_keys: domain_id,name_idx
+#           key: name_idx
+#       key_len: 258
+#           ref: const
+#          rows: 1
+#      filtered: 9.98
+#         Extra: Using where
+
+# Query 3: 15.36 QPS, 0.28x concurrency, ID 0x0C153C67308B6D18C8B0A675D41027B2 at byte 111168384
+# Scores: V/M = 0.00
+# Time range: 2023-11-30T06:33:40 to 2023-11-30T06:34:47
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count          0    1029
+# Exec time     17     18s     4ms    61ms    18ms    28ms     6ms    16ms
+# Lock time      0   965us       0    55us       0     1us     1us     1us
+# Rows sent     98   2.38M   2.36k   2.37k   2.36k   2.27k       0   2.27k
+# Rows examine  97   4.76M   4.72k   4.74k   4.73k   4.71k       0   4.71k
+# Query size     0 140.68k     140     140     140     140       0     140
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us
+# 100us
+#   1ms  ######
+#  10ms  ################################################################
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+# EXPLAIN 
+SELECT content,ttl,prio,type,domain_id,disabled,name,auth,ordername FROM records WHERE (disabled=0 OR 0) and domain_id=2 order by name, type\G
+# *************************** 1. row ***************************
+#            id: 1
+#   select_type: SIMPLE
+#         table: records
+#    partitions: NULL
+#          type: ALL
+# possible_keys: domain_id
+#           key: NULL
+#       key_len: NULL
+#           ref: NULL
+#          rows: 2428
+#      filtered: 9.98
+#         Extra: Using where; Using filesort
+
+# Query 4: 3.10k QPS, 0.20x concurrency, ID 0x8F7679D452333ED3C7D60D22131CEFD4 at byte 132778823
+# Scores: V/M = 0.00
+# Time range: 2023-11-30T06:33:25 to 2023-11-30T06:34:47
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         44  254490
+# Exec time     15     17s     7us    15ms    64us   214us   207us    36us
+# Lock time      0       0       0       0       0       0       0       0
+# Rows sent      0       0       0       0       0       0       0       0
+# Rows examine   0       0       0       0       0       0       0       0
+# Query size    17   8.01M      33      33      33      33       0      33
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us  #
+#  10us  ################################################################
+# 100us  ##########
+#   1ms  #
+#  10ms  #
+# 100ms
+#    1s
+#  10s+
+administrator command: Reset stmt\G
+
+# Query 5: 932.39 QPS, 0.23x concurrency, ID 0x3D83BC87F3B3A00D571FFC8104A6E50C at byte 26559062
+# Scores: V/M = 0.00
+# Time range: 2023-11-30T06:33:36 to 2023-11-30T06:34:47
+# Attribute    pct   total     min     max     avg     95%  stddev  median
+# ============ === ======= ======= ======= ======= ======= ======= =======
+# Count         11   66200
+# Exec time     15     16s    76us    20ms   246us   568us   410us   152us
+# Lock time     22   119ms       0    10ms     1us     1us    48us     1us
+# Rows sent      1  33.88k       0       1    0.52    0.99    0.50    0.99
+# Rows examine   2 101.88k       0       3    1.58    2.90    1.45    2.90
+# Query size    19   8.65M     126     217  137.09  151.03   12.12  124.25
+# String:
+# Databases    isudns
+# Hosts        localhost
+# Users        isudns
+# Query_time distribution
+#   1us
+#  10us  #
+# 100us  ################################################################
+#   1ms  #
+#  10ms  #
+# 100ms
+#    1s
+#  10s+
+# Tables
+#    SHOW TABLE STATUS FROM `isudns` LIKE 'records'\G
+#    SHOW CREATE TABLE `isudns`.`records`\G
+# EXPLAIN 
+SELECT content,ttl,prio,type,domain_id,disabled,name,auth FROM records WHERE disabled=0 and type='SOA' and name='u.isucon.dev'\G
+# *************************** 1. row ***************************
+#            id: 1
+#   select_type: SIMPLE
+#         table: records
+#    partitions: NULL
+#          type: ref
+# possible_keys: name_idx
+#           key: name_idx
+#       key_len: 258
+#           ref: const
+#          rows: 3
+#      filtered: 1.67
+#         Extra: Using where
