@@ -87,6 +87,62 @@ type PostIconResponse struct {
 	ID int64 `json:"id"`
 }
 
+var (
+	userIdByNameCache sync.Map
+	userCache sync.Map
+	imageCache sync.Map
+)
+
+func getUserIdByName(ctx context.Context, tx *sqlx.Tx, username string) (int64, error) {
+	v, ok := userIdByNameCache.Load(username)
+	if ok {
+		return v.(int64), nil
+	}
+
+	var userID int64
+	if err := tx.GetContext(ctx, &userID, "SELECT id FROM users WHERE name = ?", username); err != nil {
+		return 0, err
+	}
+	return userID, nil
+}
+
+func getUserByID(ctx context.Context, tx *sqlx.Tx, userID int64) (User, error) {
+	v, ok := userCache.Load(userID)
+	if ok {
+		return v.(User), nil
+	}
+
+	userModel := UserModel{}
+	if err := tx.GetContext(ctx, &userModel, "SELECT * FROM users WHERE id = ?", userID); err != nil {
+		return User{}, err
+	}
+
+	user, err := fillUserResponse(ctx, tx, userModel)
+	if err != nil {
+		return User{}, err
+	}
+
+	userCache.Store(userID, user)
+
+	return user, nil
+}
+
+func getImage(ctx context.Context, tx *sqlx.Tx, userID int64) ([]byte, error) {
+	v, ok := imageCache.Load(userID)
+	if ok {
+		return v.([]byte), nil
+	}
+
+	var image []byte
+	if err := tx.GetContext(ctx, &image, "SELECT image FROM icons WHERE user_id = ?", userID); err != nil {
+		return nil, err
+	}
+
+	imageCache.Store(userID, image)
+
+	return image, nil
+}
+
 func getIconHandler(c echo.Context) error {
 	ctx := c.Request().Context()
 
@@ -98,16 +154,23 @@ func getIconHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	var user UserModel
-	if err := tx.GetContext(ctx, &user, "SELECT * FROM users WHERE name = ?", username); err != nil {
+	var userId int64
+	if userId, err = getUserIdByName(ctx, tx, username); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
+	var user User
+	if user, err = getUserByID(ctx, tx, userId); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
+		}
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to fill user: "+err.Error())
+	}
 
 	var image []byte
-	if err := tx.GetContext(ctx, &image, "SELECT image FROM icons WHERE user_id = ?", user.ID); err != nil {
+	if image, err = getImage(ctx, tx, user.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return c.File(fallbackImage)
 		} else {
@@ -192,16 +255,7 @@ func getMeHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	userModel := UserModel{}
-	err = tx.GetContext(ctx, &userModel, "SELECT * FROM users WHERE id = ?", userID)
-	if errors.Is(err, sql.ErrNoRows) {
-		return echo.NewHTTPError(http.StatusNotFound, "not found user that has the userid in session")
-	}
-	if err != nil {
-		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
-	}
-
-	user, err := fillUserResponse(ctx, tx, userModel)
+	user, err := getUserByID(ctx, tx, userID)
 	if err != nil {
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to fill user: "+err.Error())
 	}
@@ -468,11 +522,10 @@ func verifyUserSession(c echo.Context) error {
 var (
 	fallbackIcon, _ = os.ReadFile(fallbackImage)
 	fallbackIconHash = fmt.Sprintf("%x", sha256.Sum256(fallbackIcon))
-	iconCache sync.Map
 )
 
 func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (User, error) {
-	v, ok := iconCache.Load(userModel.ID)
+	v, ok := userCache.Load(userModel.ID)
 	if ok {
 		return v.(User), nil
 	}
@@ -501,7 +554,7 @@ func fillUserResponse(ctx context.Context, tx *sqlx.Tx, userModel UserModel) (Us
 		},
 		IconHash: iconHash,
 	}
-	iconCache.Store(userModel.ID, user)
+	userCache.Store(userModel.ID, user)
 
 	return user, nil
 }
