@@ -92,6 +92,39 @@ END //
 
 DELIMITER ;
 
+DELIMITER //
+DROP PROCEDURE IF EXISTS AddColumnIfNeeded;
+CREATE PROCEDURE AddColumnIfNeeded(
+    IN p_database_name VARCHAR(255),
+    IN p_table_name VARCHAR(255),
+    IN p_column_name VARCHAR(255),
+	IN p_column_type VARCHAR(255)
+)
+BEGIN
+    DECLARE CONTINUE HANDLER FOR SQLSTATE '42S22' BEGIN END;
+    -- Check if the column exists
+    SELECT COUNT(*) INTO @column_exists
+    FROM information_schema.columns
+    WHERE
+		table_schema = p_database_name
+		AND table_name = p_table_name
+		AND column_name = p_column_name;
+
+    -- If the column exists, drop it
+    IF @column_exists > 0 THEN
+        SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' DROP COLUMN ', p_column_name);
+        PREPARE stmt FROM @s;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+    END IF;
+
+    SET @s = CONCAT('ALTER TABLE ', p_database_name, '.', p_table_name, ' ADD ', p_column_name, ' ', p_column_type);
+    PREPARE stmt FROM @s;
+    EXECUTE stmt;
+    DEALLOCATE PREPARE stmt;
+END //
+DELIMITER ;
+
 CALL RecreateIndexIfNeeded('isupipe', 'livestream_tags', 'livestream_id_idx', 'livestream_id');
 CALL RecreateIndexIfNeeded('isupipe', 'icons', 'user_id_idx', 'user_id');
 CALL RecreateIndexIfNeeded('isudns', 'records', 'name_idx', 'name');
@@ -101,3 +134,4 @@ CALL RecreateIndexIfNeeded('isupipe', 'themes', 'user_id_idx', 'user_id');
 CALL RecreateIndexIfNeeded('isupipe', 'reservation_slots', 'start_end_idx', 'start_at, end_at');
 CALL RecreateIndexIfNeeded('isupipe', 'ng_words', 'user_livestream_id_idx', 'user_id, livestream_id');
 CALL RecreateFullTextIndexIfNeeded('isupipe', 'livecomments', 'comment_full_text_idx', 'comment');
+CALL AddColumnIfNeeded('isupipe', 'icons', 'hash', 'VARCHAR(255) NOT NULL');
