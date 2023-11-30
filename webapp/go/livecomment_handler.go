@@ -416,16 +416,18 @@ func moderateHandler(c echo.Context) error {
 	*/
 	// Use MATCH() ... AGAINST()
 	// Use MATCH(text) AGAINST('+NGワード1 +NGワード2' IN BOOLEAN MODE);
+	ngPattern := ""
 	for _, ngword := range ngwords {
-		query := `
-			DELETE FROM livecomments
-			WHERE
-			livestream_id = ? AND
-			MATCH(comment) AGAINST(? IN BOOLEAN MODE);
-			`
-		if _, err := tx.ExecContext(ctx, query, livestreamID, ngword.Word); err != nil {
-			return echo.NewHTTPError(http.StatusInternalServerError, "failed to delete old livecomments that hit spams: "+err.Error())
-		}
+		ngPattern += "+" + ngword.Word + " "
+	}
+	query := `
+		DELETE FROM livecomments
+		WHERE
+		livestream_id = ? AND
+		MATCH(comment) AGAINST(? IN BOOLEAN MODE);
+		`
+	if _, err := tx.ExecContext(ctx, query, livestreamID, ngPattern); err != nil {
+		return echo.NewHTTPError(http.StatusInternalServerError, "failed to delete old livecomments that hit spams: "+err.Error())
 	}
 
 	if err := tx.Commit(); err != nil {
