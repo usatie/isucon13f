@@ -475,16 +475,18 @@ func getUserHandler(c echo.Context) error {
 	}
 	defer tx.Rollback()
 
-	userModel := UserModel{}
-	if err := tx.GetContext(ctx, &userModel, "SELECT * FROM users WHERE name = ?", username); err != nil {
+	var userId int64
+	if userId, err = getUserIdByName(ctx, tx, username); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
 		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to get user: "+err.Error())
 	}
-
-	user, err := fillUserResponse(ctx, tx, userModel)
-	if err != nil {
+	var user User
+	if user, err = getUserByID(ctx, tx, userId); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return echo.NewHTTPError(http.StatusNotFound, "not found user that has the given username")
+		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "failed to fill user: "+err.Error())
 	}
 
