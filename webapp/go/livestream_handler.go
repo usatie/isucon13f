@@ -43,15 +43,15 @@ type LivestreamModel struct {
 }
 
 type Livestream struct {
-	ID           int64  `json:"id"`
-	Owner        User   `json:"owner"`
-	Title        string `json:"title"`
-	Description  string `json:"description"`
-	PlaylistUrl  string `json:"playlist_url"`
-	ThumbnailUrl string `json:"thumbnail_url"`
+	ID           int64  `json:"id" db:"id"`
+	Owner        User   `json:"owner" db:"owner"`
+	Title        string `json:"title" db:"title"`
+	Description  string `json:"description" db:"description"`
+	PlaylistUrl  string `json:"playlist_url" db:"playlist_url"`
+	ThumbnailUrl string `json:"thumbnail_url" db:"thumbnail_url"`
 	Tags         []Tag  `json:"tags"`
-	StartAt      int64  `json:"start_at"`
-	EndAt        int64  `json:"end_at"`
+	StartAt      int64  `json:"start_at" db:"start_at"`
+	EndAt        int64  `json:"end_at" db:"end_at"`
 }
 
 type LivestreamTagModel struct {
@@ -485,42 +485,61 @@ func getLivecommentReportsHandler(c echo.Context) error {
 }
 
 func fillLivestreamResponse(ctx context.Context, tx *sqlx.Tx, livestreamModel LivestreamModel) (Livestream, error) {
-	owner, err := getUserByID(ctx, tx, livestreamModel.UserID)
-	if err != nil {
-		return Livestream{}, err
-	}
-
-	var livestreamTagModels []*LivestreamTagModel
-	if err := tx.SelectContext(ctx, &livestreamTagModels, "SELECT * FROM livestream_tags WHERE livestream_id = ?", livestreamModel.ID); err != nil {
-		return Livestream{}, err
-	}
-
-	tags := make([]Tag, len(livestreamTagModels))
-	query := `SELECT * FROM tags WHERE id IN (?)`
-	var tagIDs []int64
-	for _, livestreamTagModel := range livestreamTagModels {
-		tagIDs = append(tagIDs, livestreamTagModel.TagID)
-	}
-	if len(tagIDs) > 0 {
-		query, params, err := sqlx.In(query, tagIDs)
+	/*
+		owner, err := getUserByID(ctx, tx, livestreamModel.UserID)
 		if err != nil {
 			return Livestream{}, err
 		}
-		if err := tx.SelectContext(ctx, &tags, query, params...); err != nil {
+
+		var livestreamTagModels []*LivestreamTagModel
+		if err := tx.SelectContext(ctx, &livestreamTagModels, "SELECT * FROM livestream_tags WHERE livestream_id = ?", livestreamModel.ID); err != nil {
 			return Livestream{}, err
 		}
-	}
 
-	livestream := Livestream{
-		ID:           livestreamModel.ID,
-		Owner:        owner,
-		Title:        livestreamModel.Title,
-		Tags:         tags,
-		Description:  livestreamModel.Description,
-		PlaylistUrl:  livestreamModel.PlaylistUrl,
-		ThumbnailUrl: livestreamModel.ThumbnailUrl,
-		StartAt:      livestreamModel.StartAt,
-		EndAt:        livestreamModel.EndAt,
+		tags := make([]Tag, len(livestreamTagModels))
+		query := `SELECT * FROM tags WHERE id IN (?)`
+		var tagIDs []int64
+		for _, livestreamTagModel := range livestreamTagModels {
+			tagIDs = append(tagIDs, livestreamTagModel.TagID)
+		}
+		if len(tagIDs) > 0 {
+			query, params, err := sqlx.In(query, tagIDs)
+			if err != nil {
+				return Livestream{}, err
+			}
+			if err := tx.SelectContext(ctx, &tags, query, params...); err != nil {
+				return Livestream{}, err
+			}
+		}
+
+		livestream := Livestream{
+			ID:           livestreamModel.ID,
+			Owner:        owner,
+			Title:        livestreamModel.Title,
+			Tags:         tags,
+			Description:  livestreamModel.Description,
+			PlaylistUrl:  livestreamModel.PlaylistUrl,
+			ThumbnailUrl: livestreamModel.ThumbnailUrl,
+			StartAt:      livestreamModel.StartAt,
+			EndAt:        livestreamModel.EndAt,
+		}
+	*/
+	var livestream Livestream
+	query := `SELECT
+			livestreams.*,
+			users.id AS "owner.id",
+			users.username AS "owner.username", 
+			users.display_name AS "owner.display_name",
+			users.avatar_url AS "owner.avatar_url" 
+		FROM livestreams
+		INNER JOIN users ON livestreams.user_id = users.id 
+		WHERE livestreams.id = ?`
+	if err := tx.GetContext(ctx, &livestream, query, livestreamModel.ID); err != nil {
+		return Livestream{}, err
+	}
+	query = `SELECT tags.* FROM tags INNER JOIN livestream_tags ON tags.id = livestream_tags.tag_id WHERE livestream_tags.livestream_id = ?`
+	if err := tx.SelectContext(ctx, &livestream.Tags, query, livestreamModel.ID); err != nil {
+		return Livestream{}, err
 	}
 	return livestream, nil
 }
