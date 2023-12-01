@@ -55,6 +55,61 @@ TRDSQL_SQL:=$(TRDSQL_DIR)/access.sql
 DURATION=120
 RESULT_DIR:=$(HOME)/results
 
+# Deploy and Sync commands
+.PHONY: ssh-bench
+ssh-bench:
+	ssh isu2 "source .zshrc; make bench-db" &
+	ssh isu3 "source .zshrc; make bench-db" &
+	ssh isu1 "source .zshrc; make bench"
+
+.PHONY: ssh-clear
+ssh-clear:
+	ssh isu1 "git clean -df && git reset --hard"
+	ssh isu2 "git clean -df && git reset --hard"
+	ssh isu3 "git clean -df && git reset --hard"
+
+.PHONY:
+ssh-stop:
+	ssh isu1 "make stop-bench"
+	ssh isu2 "make stop-bench-db"
+	ssh isu3 "make stop-bench-db"
+
+.PHONY: pull
+pull:
+	# s1
+	ssh isu1 "git status -s | grep -E '^( M| A|\?\?)' | sed -e 's/^.. //'" > changed_files.txt
+	rsync -av --files-from=changed_files.txt isu:. .
+	# s2
+	ssh isu2 "git status -s | grep -E '^( M| A|\?\?)' | sed -e 's/^.. //'" > changed_files.txt
+	rsync -av --files-from=changed_files.txt isu2:. .
+	# s3
+	ssh isu3 "git status -s | grep -E '^( M| A|\?\?)' | sed -e 's/^.. //'" > changed_files.txt
+	rsync -av --files-from=changed_files.txt isu3:. .
+	# clean up
+	$(MAKE) ssh-clear
+	rm changed_files.txt
+
+.PHONY: push
+push: ssh-clear
+	ssh isu1 "git pull origin main"
+	ssh isu2 "git pull origin main"
+	ssh isu3 "git pull origin main"
+
+.PHONY: stop-bench-db
+stop-bench-db:
+	@if [ -s top.pid ]; then \
+		kill `cat top.pid` || true; \
+		rm -f top.pid; \
+	else \
+		echo "top.pid not found or empty. Maybe top is not running or failed to start."; \
+	fi
+	@if [ -s dstat.pid ]; then \
+		kill `cat dstat.pid` || true; \
+		rm -f dstat.pid; \
+	else \
+		echo "dstat.pid not found or empty. Maybe dstat is not running or failed to start."; \
+	fi
+
 # Main commands
 .PHONY: setup
 setup: addkey vim-setup git-setup install-tools makedir keygen
@@ -73,8 +128,8 @@ bench-result-dir: $(RESULT_DIR)
 .PHONY: bench
 bench: check-server-id rotate build deploy-conf restart bench-result-dir
 	# Stats
-	$(MAKE) top &
-	$(MAKE) dstat &
+	$(MAKE) top
+	$(MAKE) dstat
 	$(MAKE) pprof-record &
 	
 	# App log
@@ -83,18 +138,20 @@ bench: check-server-id rotate build deploy-conf restart bench-result-dir
 .PHONY: bench-db
 bench-db: check-server-id rotate deploy-conf restart bench-result-dir
 	# Stats
-	$(MAKE) top &
-	$(MAKE) dstat &
+	$(MAKE) top
+	$(MAKE) dstat
 
 .PHONY: top
 top: $(RESULT_DIR)
 	$(eval n := $(shell (ls -l $(RESULT_DIR) || echo 1) | tail +2 | wc -l))
-	LINES=20 top -b -d 1 -n $(DURATION) -w > $(RESULT_DIR)/$(n)/top.$(SERVER_ID).log
+	LINES=20 top -b -d 1 -w > $(RESULT_DIR)/$(n)/top.$(SERVER_ID).log & \
+		  echo $$! > top.pid
 
 .PHONY: dstat
 dstat: $(RESULT_DIR)
 	$(eval n := $(shell (ls -l $(RESULT_DIR) || echo 1) | tail +2 | wc -l))
-	dstat -tcdm --tcp -n 1 $(DURATION) > $(RESULT_DIR)/$(n)/dstat.$(SERVER_ID).log
+	dstat -tcdm --tcp -n 1 > $(RESULT_DIR)/$(n)/dstat.$(SERVER_ID).log & \
+		  echo $$! > dstat.pid
 
 .PHONY: app-log
 app-log:
